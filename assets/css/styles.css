@@ -1,0 +1,24 @@
+:root {
+    --color-primary: #000236;
+    --color-secondary: #BBA14F;
+    --color-tertiary: #6B6B6B;
+}
+
+/* Font declarations */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;300&display=swap');
+
+/* Global styles */
+html, body {
+    font-family: 'Montserrat Thin', sans-serif;
+    color: var(--color-tertiary);
+}
+
+h1, h2, h3 {
+    font-family: 'Marcellus', serif;
+    color: var(--color-primary);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
