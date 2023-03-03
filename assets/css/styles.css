@@ -53,6 +53,27 @@ h1 {
 .thm-color-secondary {
     color: var(--color-secondary);
 }
+
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+.thm-navbar {
+    height: 72px;
+    padding: 0;
+}
+
+.thm-navbar .navbar-nav .nav-item {
+    padding: 4px;
+    min-width: 86px;
+}
+
+.thm-navbar .navbar-nav .nav-item a {
+    color: var(--color-primary);
+}
+
+
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
