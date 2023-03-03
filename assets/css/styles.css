@@ -124,4 +124,38 @@ h1 {
     background-color: rgba(3, 9, 56, 0.96) !important;
     color: #D0C296 !important;
 }
+
+
+/*--------------------------------------------------------------
+# Banner section
+--------------------------------------------------------------*/
+
+.banner-section {
+    height: 711px;
+    background-color: rgba(162,158,158,0.38);
+    background-image: url(/assets/images/bg_banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(162, 158, 158, 0.38);
+    z-index: 2;
+}
+
+.banner-section div {
+    z-index: 3;
+}
+
 }
