@@ -56,29 +56,11 @@ h1 {
 
 
 /*--------------------------------------------------------------
-# Navbar
---------------------------------------------------------------*/
-
-.thm-navbar {
-    height: 72px;
-    padding: 0;
-}
-
-.thm-navbar .navbar-nav .nav-item {
-    padding: 4px;
-    min-width: 86px;
-}
-
-.thm-navbar .navbar-nav .nav-item a {
-    color: var(--color-primary);
-}
-
-
-/*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
 
 .thm-btn-dark, .thm-btn-light {
+    padding: 16px 22px;
     border-radius: 10px;
     font-size: 18px;
     font-weight: 600;
@@ -90,14 +72,12 @@ h1 {
 }
 
 .thm-btn-dark {
-    padding: 13px 21px;
     background-color: var(--color-secondary);
     border-color: var(--color-secondary) !important;
     color: #fff !important;
 }
 
 .thm-btn-light {
-    padding: 16px 21px;
     background-color: rgba(255, 255, 255, 0.96);
     border-color: #fff !important;
     color: var(--color-secondary);
@@ -106,7 +86,7 @@ h1 {
 
 .thm-btn-dark:hover, .thm-btn-light:hover {
     background-color: rgba(3, 9, 56, 0.4);
-    border-color: #fff;
+    border-color: #fff !important;
 }
 
 .thm-btn-light:hover {
@@ -123,6 +103,30 @@ h1 {
 .thm-btn-light:active {
     background-color: rgba(3, 9, 56, 0.96) !important;
     color: #D0C296 !important;
+}
+
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+.thm-navbar {
+    height: 72px;
+    padding: 0;
+    z-index: 1000;
+}
+
+.thm-navbar .navbar-nav .nav-item {
+    padding: 4px;
+    min-width: 86px;
+}
+
+.thm-navbar .navbar-nav .nav-item a {
+    color: var(--color-primary);
+}
+
+.thm-navbar .thm-btn-dark {
+    padding: 13px 21px !important;
 }
 
 
