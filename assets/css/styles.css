@@ -254,66 +254,30 @@ h1 {
     z-index: 12;
 }
 
-.memories-section .collage-3 {
-    width: 173px;
-    height: 132px;
-    left: 113px;
-    top: 236px;
-    z-index: 79;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+    padding: 14.5px 0;
 }
 
-.memories-section .collage-4 {
-    width: 206px;
-    height: 274px;
-    left: 259px;
-    top: 9px;
-    z-index: 78;
+footer p, footer a, footer span {
+    font-size: 12px;
+    color: #a9a9a9;
+    z-index: 291;
 }
 
-.memories-section .collage-5 {
-    width: 208px;
-    height: 276px;
-    left: 408px;
-    top: -206px;
-    z-index: 57;
+footer a {
+    text-decoration: none;
 }
 
-.memories-section .collage-6 {
-    width: 144px;
-    height: 197px;
-    left: 446px;
-    top: 203px;
-    z-index: 22;
+footer a:hover {
+    color: #a9a9a9;
 }
 
-.memories-section .star-circle {
-    width: 168px;
-    height: 168px;
-    border: 1px solid #fff;
-    border-radius: 119px;
-    left: 930px;
-    top: -293.5px;
-    z-index: 46;
-}
-
-.memories-section .star-circle p {
-    margin-bottom: 0;
-    color: #fff;
-    font-size: 16px;
-}
-
-.memories-section .star-circle p:first-child {
-    font-size: 62px;
-    line-height: 0.6;
-}
-
-.memories-section .star-circle p:nth-child(2) {
-    font-size: 40px;
-    line-height: 1;
-}
-
-.memories-section .star-circle .star {
-    position: absolute;
-    right: 0;
-    bottom: 20px;
+footer .separator {
+    height: 22px;
+    border-left: 1px solid #ccc;
+    border-radius: 0;
 }
