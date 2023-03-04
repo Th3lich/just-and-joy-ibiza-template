@@ -164,17 +164,39 @@ h1 {
 
 
 /*--------------------------------------------------------------
-# Logos section
+# Logos section && Restaurants section
 --------------------------------------------------------------*/
 
-.logos-section {
-    background: rgba(3, 9, 56, 1);
-    height: 75px;
+.logos-section, .restaurants-section {
+    background: var(--color-primary);
     padding-top: 12.5px;
     padding-bottom: 12.5px;
+}
+
+.logos-section {
     border-top: 1px solid var(--color-secondary);
 }
 
+.logos-section .logos-list, .restaurants-section .logos-list {
+    gap: 6px;
+}
+
+.restaurants-section h6 {
+    font-size: 13px;
+}
+
+/* Arrow up */
+
+.arrow-up {
+    width: 71px;
+    height: 71px;
+    background-color: #fff;
+    border: 2px solid var(--color-primary);
+    border-radius: 144px;
+    z-index: 106;
+    top: -50px;
+    right: 12px;
+}
 
 /*--------------------------------------------------------------
 # Video section
