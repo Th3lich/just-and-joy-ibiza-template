@@ -114,6 +114,7 @@ h1 {
     height: 72px;
     padding: 0;
     z-index: 1000;
+    transition: opacity 0.4s ease-in-out;
 }
 
 .thm-navbar .navbar-nav .nav-item {
