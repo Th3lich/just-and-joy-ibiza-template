@@ -48,15 +48,19 @@ window.addEventListener('load', function() {
 
     // Youtube video
     let video = this.document.querySelector('.youtube');
-    video.style.height = `${this.calculateYoutubeLayout().height}%`;
-    video.style.top = `-${this.calculateYoutubeLayout().top}%`;
-
     let videoSection = this.document.querySelector('.video-section');
-    videoSection.style.height = `${this.calculateYoutubeContainerHeight()}px`;
 
-    this.window.addEventListener('resize', () => {
+    if (window.innerWidth > 767) {
         video.style.height = `${this.calculateYoutubeLayout().height}%`;
         video.style.top = `-${this.calculateYoutubeLayout().top}%`;
         videoSection.style.height = `${this.calculateYoutubeContainerHeight()}px`;
+    }
+
+    this.window.addEventListener('resize', () => {
+        if (window.innerWidth > 767) {
+            video.style.height = `${this.calculateYoutubeLayout().height}%`;
+            video.style.top = `-${this.calculateYoutubeLayout().top}%`;
+            videoSection.style.height = `${this.calculateYoutubeContainerHeight()}px`;
+        }
     });
 });

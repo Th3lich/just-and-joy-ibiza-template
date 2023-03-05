@@ -40,10 +40,6 @@ p {
     font-family: 'Montserrat Thin', sans-serif;
 }
 
-h1 {
-    font-size: 55px;
-}
-
 /* Container */
 .thm-container {
     max-width: 1100px;
@@ -54,6 +50,12 @@ h1 {
     color: var(--color-secondary);
 }
 
+@media screen and (max-width: 767px) {
+    .thm-container {
+        max-width: 350px;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Buttons
@@ -62,7 +64,7 @@ h1 {
 .thm-btn-dark, .thm-btn-light {
     padding: 16px 22px;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: calc(0.9rem + 0.2vw);
     font-weight: 600;
     font-family: 'Marcellus', serif;
     font-style: normal;
@@ -130,6 +132,16 @@ h1 {
     padding: 13px 21px !important;
 }
 
+@media screen and (max-width: 767px) {
+    .thm-navbar .logo {
+        width: 110px;
+    }
+
+    .thm-navbar .thm-btn-dark {
+        padding: 12px 19px !important;
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Banner section
@@ -137,7 +149,7 @@ h1 {
 
 .banner-section {
     height: 711px;
-    background-color: rgba(162,158,158,0.38);
+    background-color: rgba(162, 158, 158, 0.38);
     background-image: url(/assets/images/bg_banner.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -163,6 +175,24 @@ h1 {
     z-index: 3;
 }
 
+.banner-section h1 {
+    line-height: 1;
+    font-size: calc(3.425rem + 0.3vw);
+}
+
+@media screen and (max-width: 767px) {
+    .banner-section {
+        height: 538px;
+        background-attachment: initial;
+        background-image: url(/assets/images/bg_banner_mb.jpg);
+    }
+
+    .banner-section h1 {
+        line-height: 0.9;
+        font-size: calc(2.625rem + 0.3vw);
+    }
+}
+
 
 /*--------------------------------------------------------------
 # Logos section && Restaurants section
@@ -183,7 +213,7 @@ h1 {
 }
 
 .restaurants-section h6 {
-    font-size: 13px;
+    font-size: 0.813rem;
 }
 
 /* Arrow up */
@@ -199,7 +229,7 @@ h1 {
     right: 12px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .logos-section .logos-list {
         gap: 4px;
     }
@@ -277,11 +307,24 @@ h1 {
 }
 
 .video-section h3 {
-    font-size: 40px;
+    font-size: calc(2.4rem + 0.2vw);
 }
 
 .video-section p {
-    font-size: 20px;
+    font-size: calc(1.125rem + 0.1vw);
+}
+
+@media screen and (max-width: 767px) {
+    .video-section {
+        height: inherit !important;
+        background-color: #fff;
+    }
+
+    .video-section h3 {
+        font-size: calc(1.225rem + 0.2vw);
+        color: var(--color-secondary) !important;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -296,12 +339,12 @@ h1 {
 }
 
 .memories-section h2 {
-    font-size: 64px;
-    line-height: 1;
+    font-size: calc(3.2rem + 1vw);
+    line-height: 0.8;
 }
 
 .memories-section p {
-    font-size: 18px;
+    font-size: calc(1.1rem + 0.1vw);
 }
 
 .memories-section .collage {
@@ -318,85 +361,155 @@ h1 {
     object-position: center;
 }
 
-@media (min-width: 768px) {
+.memories-section .collage-1 {
+    width: 305px;
+    height: 223px;
+    left: 74px;
+    top: -245px;
+    z-index: 11;
+    /* top: 1344px; */
+}
+
+.memories-section .collage-2 {
+    width: 208px;
+    height: 276px;
+    left: -23px;
+    top: -81px;
+    z-index: 12;
+}
+
+.memories-section .collage-3 {
+    width: 173px;
+    height: 132px;
+    left: 113px;
+    top: 236px;
+    z-index: 79;
+}
+
+.memories-section .collage-4 {
+    width: 206px;
+    height: 274px;
+    left: 259px;
+    top: 9px;
+    z-index: 78;
+}
+
+.memories-section .collage-5 {
+    width: 208px;
+    height: 276px;
+    left: 408px;
+    top: -206px;
+    z-index: 57;
+}
+
+.memories-section .collage-6 {
+    width: 144px;
+    height: 197px;
+    left: 446px;
+    top: 203px;
+    z-index: 22;
+}
+
+.memories-section .star-circle {
+    width: 168px;
+    height: 168px;
+    border: 1px solid #fff;
+    border-radius: 119px;
+    right: 12px;
+    top: -293.5px;
+    z-index: 46;
+}
+
+.memories-section .star-circle p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.memories-section .star-circle p:first-child {
+    font-size: calc(3.375rem + 0.5vw);
+    line-height: 0.6;
+}
+
+.memories-section .star-circle p:nth-child(2) {
+    font-size: calc(2.125rem + 0.3vw);
+    line-height: 1;
+}
+
+.memories-section .star-circle .star {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .memories-section {
+        min-height: 1213px;
+    }
+
     .memories-section .collage-1 {
-        width: 305px;
-        height: 223px;
-        left: 74px;
-        top: -245px;
-        z-index: 11;
+        display: none;
     }
-    
+
     .memories-section .collage-2 {
-        width: 208px;
-        height: 276px;
-        left: -23px;
-        top: -81px;
-        z-index: 12;
+        width: 270.5px;
+        height: 192px;
+        left: 43px;
+        top: 530px;
     }
-    
+
     .memories-section .collage-3 {
-        width: 173px;
-        height: 132px;
-        left: 113px;
-        top: 236px;
-        z-index: 79;
+        width: 177px;
+        height: 133px;
+        left: 136.5px;
+        top: 370px;
     }
-    
+
     .memories-section .collage-4 {
-        width: 206px;
-        height: 274px;
-        left: 259px;
-        top: 9px;
-        z-index: 78;
+        width: 160px;
+        height: 209px;
+        left: 5px;
+        top: 399px;
     }
-    
+
     .memories-section .collage-5 {
-        width: 208px;
-        height: 276px;
-        left: 408px;
-        top: -206px;
-        z-index: 57;
+        width: 186px;
+        height: 248px;
+        left: 128px;
+        top: -368px;
     }
-    
+
     .memories-section .collage-6 {
-        width: 144px;
-        height: 197px;
-        left: 446px;
-        top: 203px;
-        z-index: 22;
+        left: 5px;
+        top: -411px;
     }
-    
+
     .memories-section .star-circle {
-        width: 168px;
-        height: 168px;
-        border: 1px solid #fff;
+        width: 155px;
+        height: 155px;
+        border: 1px solid #0309;
         border-radius: 119px;
-        right: 12px;
-        top: -293.5px;
-        z-index: 46;
+        left: 16px;
+        top: -201px;
     }
-    
+
     .memories-section .star-circle p {
-        margin-bottom: 0;
-        color: #fff;
-        font-size: 16px;
+        color: rgb(3, 9, 56);
+        width: 100%;
+        text-align: center;
     }
-    
+
     .memories-section .star-circle p:first-child {
-        font-size: 62px;
-        line-height: 0.6;
+        text-align: start;
+        margin-top: 16px;
+        padding-left: 22px;
     }
-    
-    .memories-section .star-circle p:nth-child(2) {
-        font-size: 40px;
-        line-height: 1;
-    }
-    
+
     .memories-section .star-circle .star {
-        position: absolute;
-        right: 0;
-        bottom: 20px;
+        left: -16px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
     }
 }
 
@@ -410,7 +523,7 @@ footer {
 }
 
 footer p, footer a, footer span {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #a9a9a9;
     z-index: 291;
 }
