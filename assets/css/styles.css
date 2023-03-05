@@ -515,6 +515,37 @@ p {
 
 
 /*--------------------------------------------------------------
+# People Comments section
+--------------------------------------------------------------*/
+
+.people-comments-section {
+    background: var(--color-primary);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.people-comments-section h2 {
+    font-size: calc(2.125rem + 0.3vw);
+    line-height: 1;
+}
+
+.people-comments-section .comment-card {
+    min-height: 100%;
+    border-radius: 10px;
+    font-size: calc(1rem + 0.15vw);
+    line-height: 1.2;
+}
+
+.people-comments-section .comment-avatar {
+    bottom: -50px;
+}
+
+.people-comments-section .comment-avatar img {
+    border: 2px solid #fff;
+}
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
