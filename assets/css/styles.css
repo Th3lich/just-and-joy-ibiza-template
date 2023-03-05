@@ -40,6 +40,11 @@ p {
     font-family: 'Montserrat Thin', sans-serif;
 }
 
+h2 {
+    font-size: calc(3.2rem + 0.9vw);
+    line-height: 0.8;
+}
+
 /* Container */
 .thm-container {
     max-width: 1100px;
@@ -61,7 +66,8 @@ p {
 # Buttons
 --------------------------------------------------------------*/
 
-.thm-btn-dark, .thm-btn-light {
+.thm-btn-dark, .thm-btn-light, .thm-btn-light2 {
+    min-width: calc(195px + 0.4vw);
     padding: 16px 22px;
     border-radius: 10px;
     font-size: calc(0.9rem + 0.2vw);
@@ -79,11 +85,19 @@ p {
     color: #fff !important;
 }
 
-.thm-btn-light {
+.thm-btn-light, .thm-btn-light2 {
     background-color: rgba(255, 255, 255, 0.96);
-    border-color: #fff !important;
     color: var(--color-secondary);
+}
+
+.thm-btn-light {
+    border-color: #fff !important;
     box-shadow: inset 0px 1px 0px #ffffff, inset 0 -1px 2px #cccccc;
+}
+
+.thm-btn-light2 {
+    border-width: 3px;
+    border-color: var(--color-secondary) !important;
 }
 
 .thm-btn-dark:hover, .thm-btn-light:hover {
@@ -98,13 +112,34 @@ p {
     border-width: 3px;
 }
 
+.thm-btn-light2:hover {
+    background: rgba(43, 176, 53, 1);
+    color: #fff;
+    border-color: rgba(43, 176, 53, 1) !important;
+}
+
 .thm-btn-dark:active {
     background-color: rgba(187, 162, 94, 1) !important;
 }
 
 .thm-btn-light:active {
     background-color: rgba(3, 9, 56, 0.96) !important;
-    color: #D0C296 !important;
+    color: var(--color-secondary) !important;
+}
+
+.thm-btn-light2:active {
+    color: var(--color-secondary) !important;
+    border-color: #fff !important;
+}
+
+@media screen and (max-width: 767px) {
+    .thm-btn-dark, .thm-btn-light, .thm-btn-light2 {
+        padding: 14px 22px;
+    }
+
+    .thm-btn-light:hover {
+        padding: 12px 19px;
+    }
 }
 
 
@@ -338,11 +373,6 @@ p {
     z-index: 1;
 }
 
-.memories-section h2 {
-    font-size: calc(3.2rem + 1vw);
-    line-height: 0.8;
-}
-
 .memories-section p {
     font-size: calc(1.1rem + 0.1vw);
 }
@@ -524,7 +554,7 @@ p {
     padding-bottom: 32px;
 }
 
-.people-comments-section h2 {
+.people-comments-section h3 {
     font-size: calc(2.125rem + 0.3vw);
     line-height: 1;
 }
@@ -542,6 +572,76 @@ p {
 
 .people-comments-section .comment-avatar img {
     border: 2px solid #fff;
+}
+
+
+/*--------------------------------------------------------------
+# FAQs section
+--------------------------------------------------------------*/
+
+.faqs-section .faq-quests {
+    padding-left: 1rem;
+}
+
+.faqs-section .faqs-separator {
+    width: 32px;
+    height: 22px;
+    border-top: 1px solid var(--color-secondary);
+    border-radius: 0;
+}
+
+.faqs-section .faqs-quest-col {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.faqs-section .faq-quest {
+    font-size: calc(1rem + 0.13vw);
+    cursor: pointer;
+}
+
+.faqs-section .faq-quest p {
+    font-family: 'Montserrat';
+    margin-bottom: 0.5rem;
+}
+
+.faqs-section .faq-answer {
+    padding: 0 15px;
+    border-left: 1px solid #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease-in;
+    margin-bottom: 1rem;
+}
+
+.faqs-section .more-questions-col h3 {
+    font-size: calc(2.1rem + 1vw);
+    line-height: 0.9;
+}
+
+.faqs-section .more-questions-col a {
+    width: 250px;
+    padding: 13px 19px;
+    font-size: calc(1.1rem + 0.1vw);
+}
+
+@media screen and (min-width: 768px) {
+    .faqs-section .faqs-quest-col {
+        flex: 1;
+        padding: 0 2rem;
+    }
+
+    .faqs-section .faqs-separator {
+        width: 1px;
+        height: 325px;
+        border-left: 1px solid #ccc;
+        border-top: inherit;
+        border-radius: 0;
+    }
+
+    .faqs-section .more-questions-col a {
+        width: inherit;
+    }
 }
 
 

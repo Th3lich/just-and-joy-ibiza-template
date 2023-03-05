@@ -46,6 +46,7 @@ window.addEventListener('load', function() {
         navbar.classList.remove('opacity-0');
     }
 
+
     // Youtube video
     let video = this.document.querySelector('.youtube');
     let videoSection = this.document.querySelector('.video-section');
@@ -63,4 +64,21 @@ window.addEventListener('load', function() {
             videoSection.style.height = `${this.calculateYoutubeContainerHeight()}px`;
         }
     });
+
+
+    // FAQs
+    let quests = document.getElementsByClassName('faq-quest');
+    Array.from(quests).forEach((quest) => {
+        quest.addEventListener('click', () => {
+            quest.classList.toggle('quest-active');
+            let answer = quest.nextElementSibling;
+
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null;
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+    });
+
 });
