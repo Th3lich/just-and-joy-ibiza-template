@@ -185,7 +185,7 @@ h2 {
 .banner-section {
     height: 711px;
     background-color: rgba(162, 158, 158, 0.38);
-    background-image: url(/assets/images/bg_banner.jpg);
+    background-image: url(../images/bg_banner.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
@@ -219,7 +219,7 @@ h2 {
     .banner-section {
         height: 538px;
         background-attachment: initial;
-        background-image: url(/assets/images/bg_banner_mb.jpg);
+        background-image: url(../images/bg_banner_mb.jpg);
     }
 
     .banner-section h1 {
