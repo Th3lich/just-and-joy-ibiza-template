@@ -41,7 +41,7 @@ p {
 }
 
 h2 {
-    font-size: calc(3.2rem + 0.9vw);
+    font-size: calc(3.2rem + 0.8vw);
     line-height: 0.8;
 }
 
@@ -382,6 +382,10 @@ h3 {
     z-index: 1;
 }
 
+.memories-section .row {
+    max-height: 350px;
+}
+
 .memories-section p {
     font-size: calc(1.1rem + 0.1vw);
 }
@@ -455,7 +459,7 @@ h3 {
     border: 1px solid #fff;
     border-radius: 119px;
     right: 12px;
-    top: -293.5px;
+    top: -304px;
     z-index: 46;
 }
 
