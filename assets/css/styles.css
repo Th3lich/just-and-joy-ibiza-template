@@ -999,3 +999,25 @@ footer .separator {
     border-left: 1px solid #ccc;
     border-radius: 0;
 }
+
+
+/*--------------------------------------------------------------
+# Floating button
+--------------------------------------------------------------*/
+
+.floating-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    right: 0;
+    margin: 18px;
+    background: #25d366;
+    box-shadow: 0 10px 25px -5px rgb(37 211 102 / 50%);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    line-height: 55px;
+    z-index: 99;
+}
