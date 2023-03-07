@@ -6,20 +6,21 @@
 /****************************************\
 01.General
 02.Buttons
-03.Navbar
-04.Boat card
-05.Banner section
-06.Logos section && Restaurants section
-07.Video section
-08.Memories section
-09.People Comments section
-10.Boats section
-11.Onboard Features section
-12.Why Us section
-13.FAQs section
-14.Contact section
-15.Footer
-16.Floating button
+03.Forms
+04.Navbar
+05.Boat card
+06.Banner section
+07.Logos section && Restaurants section
+08.Video section
+09.Memories section
+10.People Comments section
+11.Boats section
+12.Onboard Features section
+13.Why Us section
+14.FAQs section
+15.Contact section
+16.Footer
+17.Floating button
 *****************************************/
 
 
@@ -78,6 +79,11 @@ h3 {
 
 .thm-color-secondary {
     color: var(--color-secondary);
+}
+
+/* First section */
+body > section:first-of-type {
+    margin-top: 72px;
 }
 
 @media screen and (max-width: 767px) {
@@ -184,6 +190,27 @@ h3 {
 
 
 /*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+.thm-form-control {
+    padding: 12px 12px;
+    color: #6D6D6D;
+    font-size: 0.9rem;
+    line-height: 15px;
+    border: 1px solid #6D6D6D !important;
+    border-radius: 0;
+    box-shadow: inset 0px 2px 3px #ddd !important;
+    -webkit-box-shadow: inset 0px 2px 3px #ddd !important;
+    -moz-box-shadow: inset 0px 2px 3px #ddd !important;
+}
+
+.thm-form-check-label {
+    font-size: calc(0.8rem + 0.05vw);
+}
+
+
+/*--------------------------------------------------------------
 # Navbar
 --------------------------------------------------------------*/
 
@@ -273,7 +300,6 @@ h3 {
 --------------------------------------------------------------*/
 
 .banner-section {
-    margin-top: 72px;
     height: 711px;
     background-image: url(../images/bg_banner.jpg);
     background-attachment: fixed;
@@ -991,6 +1017,41 @@ h3 {
 /*--------------------------------------------------------------
 # Contact section
 --------------------------------------------------------------*/
+
+.contact-section .thm-btn-dark {
+    padding: 13px 22px;
+}
+
+.contact-section .contact-us h4 {
+    font-size: calc(1.5rem + 0.1vw);
+}
+
+.contact-section .contact-us h5 {
+    font-size: calc(1.325rem + 0.1vw);
+}
+
+.contact-section .unique-memories {
+    height: 700px;
+    overflow: hidden;
+}
+
+.contact-section .unique-memories-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 3;
+}
+
+.contact-section .unique-memories img {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-section .unique-memories {
+        height: 400px;
+    }
+}
 
 
 /*--------------------------------------------------------------

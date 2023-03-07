@@ -38,35 +38,37 @@ window.addEventListener('load', function() {
     // Youtube video
     let video = this.document.querySelector('.youtube');
     let videoSection = this.document.querySelector('.video-section');
-
-    if (window.innerWidth > 767) {
-        video.style.height = `${this.calculateYoutubeLayout().height}%`;
-        video.style.top = `-${this.calculateYoutubeLayout().top}%`;
-        videoSection.style.height = `${this.calculateYoutubeContainerHeight()}px`;
-    }
-
-    this.window.addEventListener('resize', () => {
+    if (video) {
         if (window.innerWidth > 767) {
             video.style.height = `${this.calculateYoutubeLayout().height}%`;
             video.style.top = `-${this.calculateYoutubeLayout().top}%`;
             videoSection.style.height = `${this.calculateYoutubeContainerHeight()}px`;
         }
-    });
-
+    
+        this.window.addEventListener('resize', () => {
+            if (window.innerWidth > 767) {
+                video.style.height = `${this.calculateYoutubeLayout().height}%`;
+                video.style.top = `-${this.calculateYoutubeLayout().top}%`;
+                videoSection.style.height = `${this.calculateYoutubeContainerHeight()}px`;
+            }
+        });
+    }
 
     // FAQs
     let quests = document.getElementsByClassName('faq-quest');
-    Array.from(quests).forEach((quest) => {
-        quest.addEventListener('click', () => {
-            quest.classList.toggle('quest-active');
-            let answer = quest.nextElementSibling;
-
-            if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
-            } else {
-                answer.style.maxHeight = answer.scrollHeight + 'px';
-            }
+    if (quests) {
+        Array.from(quests).forEach((quest) => {
+            quest.addEventListener('click', () => {
+                quest.classList.toggle('quest-active');
+                let answer = quest.nextElementSibling;
+    
+                if (answer.style.maxHeight) {
+                    answer.style.maxHeight = null;
+                } else {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                }
+            });
         });
-    });
+    }
 
 });
