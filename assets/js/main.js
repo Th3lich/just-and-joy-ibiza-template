@@ -71,4 +71,24 @@ window.addEventListener('load', function() {
         });
     }
 
+    // Search Sidebar
+    let sidebar = document.querySelector('.search-sidebar');
+    let btnFilter = document.querySelector('.btn-filter');
+    if (sidebar) {
+        let closeBtns = this.document.querySelectorAll('.search-sidebar .btn-close');
+        Array.from(closeBtns).forEach((closeBtn) => {
+            closeBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('show');
+            });
+        });
+
+        btnFilter.addEventListener('click', () => {
+            sidebar.classList.toggle('show');
+        });
+
+        if (window.innerWidth > 767) {
+            sidebar.classList.add('show');
+        }
+    }
+
 });

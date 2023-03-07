@@ -19,8 +19,9 @@
 13.Why Us section
 14.FAQs section
 15.Contact section
-16.Footer
-17.Floating button
+17.Footer
+18.Floating button
+19.Search sidebar
 *****************************************/
 
 
@@ -72,13 +73,20 @@ h3 {
     max-width: 1100px;
 }
 
-/* Color */
+/* Colors */
 .thm-color-primary {
     color: var(--color-primary);
 }
 
 .thm-color-secondary {
     color: var(--color-secondary);
+}
+
+/* Backgrounds */
+.bg-primary-separator {
+    background-color: var(--color-primary);
+    height: 13px;
+    width: 100%;
 }
 
 /* First section */
@@ -97,7 +105,7 @@ body > section:first-of-type {
 # Buttons
 --------------------------------------------------------------*/
 
-.thm-btn-dark, .thm-btn-dark2, .thm-btn-light, .thm-btn-light2 {
+.thm-btn-dark, .thm-btn-dark2, .thm-btn-dark3, .thm-btn-light, .thm-btn-light2 {
     min-width: calc(195px + 0.4vw);
     padding: 16px 22px;
     border-radius: 10px;
@@ -110,7 +118,7 @@ body > section:first-of-type {
     border-width: 1px;
 }
 
-.thm-btn-dark, .thm-btn-dark2 {
+.thm-btn-dark, .thm-btn-dark2, .thm-btn-dark3 {
     color: #fff !important;
 }
 
@@ -124,6 +132,14 @@ body > section:first-of-type {
     background-color: var(--color-primary);
     border-color: var(--color-primary) !important;
     font-size: calc(0.8rem + 0.15vw);
+}
+
+.thm-btn-dark3 {
+    background-color: var(--color-secondary);
+    padding: 10px 24px;
+    border-radius: 0;
+    border-color: #fff !important;
+    box-shadow: 0px 0px 0px 2px var(--color-secondary);
 }
 
 .thm-btn-light, .thm-btn-light2 {
@@ -146,6 +162,15 @@ body > section:first-of-type {
     border-color: #fff !important;
 }
 
+.thm-btn-dark3:hover {
+    background-color: #fff;
+    color: var(--color-secondary) !important;
+}
+
+.thm-btn-dark3:hover svg {
+    fill: var(--color-secondary);
+}
+
 .thm-btn-dark2:hover {
     background-color: var(--color-secondary);
     border-color: #fff !important;
@@ -164,7 +189,7 @@ body > section:first-of-type {
     border-color: rgba(43, 176, 53, 1) !important;
 }
 
-.thm-btn-dark:active, .thm-btn-dark2:active {
+.thm-btn-dark:active, .thm-btn-dark2:active, .thm-btn-dark3:active {
     background-color: rgba(187, 162, 94, 1) !important;
 }
 
@@ -217,7 +242,7 @@ body > section:first-of-type {
 .thm-navbar {
     height: 72px;
     padding: 0;
-    z-index: 1000;
+    z-index: 100;
     transition: opacity 0.4s ease-in-out;
 }
 
@@ -1102,4 +1127,41 @@ footer .separator {
     color: inherit;
     line-height: 55px;
     z-index: 99;
+}
+
+
+/*--------------------------------------------------------------
+# All Boats section
+--------------------------------------------------------------*/
+
+.all-boats-section .btn-filter {
+    min-width: inherit;
+}
+
+
+/*--------------------------------------------------------------
+# Search sidebar
+--------------------------------------------------------------*/
+
+.search-sidebar {
+    padding-top: 72px;
+    z-index: 901;
+}
+
+.search-sidebar .thm-btn-dark {
+    padding: 10px 24px;
+    border-radius: 0;
+    border-color: #fff !important;
+    box-shadow: 0px 0px 0px 2px var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) {
+    .search-sidebar {
+        padding-top: 0;
+        margin-top: 72px;
+        border: none !important;
+        transition: none;
+        visibility: visible !important;
+        transform: none !important;
+    }
 }
