@@ -75,7 +75,7 @@ h3 {
 # Buttons
 --------------------------------------------------------------*/
 
-.thm-btn-dark, .thm-btn-light, .thm-btn-light2 {
+.thm-btn-dark, .thm-btn-dark2, .thm-btn-light, .thm-btn-light2 {
     min-width: calc(195px + 0.4vw);
     padding: 16px 22px;
     border-radius: 10px;
@@ -88,10 +88,20 @@ h3 {
     border-width: 1px;
 }
 
+.thm-btn-dark, .thm-btn-dark2 {
+    color: #fff !important;
+}
+
 .thm-btn-dark {
     background-color: var(--color-secondary);
     border-color: var(--color-secondary) !important;
-    color: #fff !important;
+}
+
+.thm-btn-dark2 {
+    padding: 12px 22px;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary) !important;
+    font-size: calc(0.8rem + 0.15vw);
 }
 
 .thm-btn-light, .thm-btn-light2 {
@@ -114,6 +124,11 @@ h3 {
     border-color: #fff !important;
 }
 
+.thm-btn-dark2:hover {
+    background-color: var(--color-secondary);
+    border-color: #fff !important;
+}
+
 .thm-btn-light:hover {
     padding: 14px 19px;
     box-shadow: inset 0px 1px 0px #1c2251, inset 0 -1px 2px #000004;
@@ -127,7 +142,7 @@ h3 {
     border-color: rgba(43, 176, 53, 1) !important;
 }
 
-.thm-btn-dark:active {
+.thm-btn-dark:active, .thm-btn-dark2:active {
     background-color: rgba(187, 162, 94, 1) !important;
 }
 
@@ -585,6 +600,138 @@ h3 {
 
 .people-comments-section .comment-avatar img {
     border: 2px solid #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Boats section
+--------------------------------------------------------------*/
+
+.boats-section > div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 286px;
+    height: 210px;
+    background-color: var(--color-primary);
+    z-index: -1;
+}
+
+.boats-section .boats-title {
+    padding-top: 146px;
+}
+
+.boats-section .boats-title div:nth-child(1) {
+    width: 286px;
+}
+
+.boats-section .boats-title div:nth-child(2) {
+    flex: 1;
+    padding-left: 68px;
+}
+
+.boats-section .boats-title h2 {
+    line-height: 0.94;
+}
+
+.boats-section .boats-title .boats-separator {
+    width: 100%;
+    border-bottom: 3px solid var(--color-primary);
+    border-radius: 0;
+}
+
+.boats-section .boats-title div:nth-child(2) h2 {
+    line-height: 0.94;
+}
+
+.boats-section .boats-title h5 {
+    font-size: calc(1.5rem + 0.34vw);
+    padding-right: calc(3px + 0.1vw);
+}
+
+.boats-section .boats-title .boat-clock {
+    top: -20px;
+    right: 66px;
+    z-index: -1;
+}
+
+.see-more-card {
+    box-shadow: 15px 15px 45px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    height: 100%;
+    padding: 24px 34px;
+}
+
+.see-more-card > div {
+    flex: 1;
+}
+
+.see-more-card p {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .boats-section .boats-title .boat-clock {
+        width: 45px;
+        height: 45px;
+        right: 55px;
+        z-index: -1;
+    }
+
+    .boats-section .boats-title h5, .boats-section .boats-title div:nth-child(2) h2 {
+        line-height: 0.8;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Boat card
+--------------------------------------------------------------*/
+
+.boat-card {
+    color: inherit;
+    text-decoration: none;
+    transition: background 250ms, border-radius 250ms,;
+}
+
+.boat-card:hover {
+    background-color: rgba(2, 7, 53, 0.08);
+    border-radius: 10px;
+    color: inherit;
+}
+
+.boat-card .boat-image {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.boat-card .boat-items {
+    gap: 2px;
+}
+
+.boat-card .boat-item {
+    gap: 12px;
+}
+
+.boat-card .boat-item p {
+    font-size: 0.875rem;
+}
+
+.boat-card .boat-item:nth-child(2) img {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.boat-card .boat-more {
+    width: 200px;
+    height: fit-content;
+    padding: 8.5px 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.1;
 }
 
 
