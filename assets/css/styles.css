@@ -1,9 +1,25 @@
 /* Author: Javier López López
    Version: 1.0
+   Date: 07/03/2023
    File Description: Css file for theme styles
 */
 /****************************************\
 01.General
+02.Buttons
+03.Navbar
+04.Boat card
+05.Banner section
+06.Logos section && Restaurants section
+07.Video section
+08.Memories section
+09.People Comments section
+10.Boats section
+11.Onboard Features section
+12.Why Us section
+13.FAQs section
+14.Contact section
+15.Footer
+16.Floating button
 *****************************************/
 
 
@@ -199,6 +215,56 @@ h3 {
     .thm-navbar .thm-btn-dark {
         padding: 12px 19px !important;
     }
+}
+
+
+/*--------------------------------------------------------------
+# Boat card
+--------------------------------------------------------------*/
+
+.boat-card {
+    color: inherit;
+    text-decoration: none;
+    transition: background 250ms, border-radius 250ms,;
+}
+
+.boat-card:hover {
+    background-color: rgba(2, 7, 53, 0.08);
+    border-radius: 10px;
+    color: inherit;
+}
+
+.boat-card .boat-image {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.boat-card .boat-items {
+    gap: 2px;
+}
+
+.boat-card .boat-item {
+    gap: 12px;
+}
+
+.boat-card .boat-item p {
+    font-size: 0.875rem;
+}
+
+.boat-card .boat-item:nth-child(2) img {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.boat-card .boat-more {
+    width: 200px;
+    height: fit-content;
+    padding: 8.5px 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.1;
 }
 
 
@@ -686,56 +752,6 @@ h3 {
 
 
 /*--------------------------------------------------------------
-# Boat card
---------------------------------------------------------------*/
-
-.boat-card {
-    color: inherit;
-    text-decoration: none;
-    transition: background 250ms, border-radius 250ms,;
-}
-
-.boat-card:hover {
-    background-color: rgba(2, 7, 53, 0.08);
-    border-radius: 10px;
-    color: inherit;
-}
-
-.boat-card .boat-image {
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.boat-card .boat-items {
-    gap: 2px;
-}
-
-.boat-card .boat-item {
-    gap: 12px;
-}
-
-.boat-card .boat-item p {
-    font-size: 0.875rem;
-}
-
-.boat-card .boat-item:nth-child(2) img {
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-.boat-card .boat-more {
-    width: 200px;
-    height: fit-content;
-    padding: 8.5px 16px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    font-size: 0.875rem;
-    text-align: center;
-    line-height: 1.1;
-}
-
-
-/*--------------------------------------------------------------
 # Onboard Features section
 --------------------------------------------------------------*/
 
@@ -970,6 +986,11 @@ h3 {
         width: inherit;
     }
 }
+
+
+/*--------------------------------------------------------------
+# Contact section
+--------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------
