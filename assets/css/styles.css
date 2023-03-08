@@ -19,6 +19,7 @@
 13.Why Us section
 14.FAQs section
 15.Contact section
+16.All Boats section
 17.Footer
 18.Floating button
 19.Search sidebar
@@ -1080,6 +1081,15 @@ body > section:first-of-type {
 
 
 /*--------------------------------------------------------------
+# All Boats section
+--------------------------------------------------------------*/
+
+.all-boats-section .btn-filter {
+    min-width: inherit;
+}
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 
@@ -1131,15 +1141,6 @@ footer .separator {
 
 
 /*--------------------------------------------------------------
-# All Boats section
---------------------------------------------------------------*/
-
-.all-boats-section .btn-filter {
-    min-width: inherit;
-}
-
-
-/*--------------------------------------------------------------
 # Search sidebar
 --------------------------------------------------------------*/
 
@@ -1163,5 +1164,150 @@ footer .separator {
         transition: none;
         visibility: visible !important;
         transform: none !important;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Boat Banner Section
+--------------------------------------------------------------*/
+
+.boat-banner-section {
+    height: 711px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.boat-banner-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 241, 241, 0.13);
+    z-index: 2;
+}
+
+.boat-banner-section div {
+    z-index: 3;
+}
+
+.boat-banner-section .boat-banner-title {
+    width: fit-content;
+}
+
+.boat-banner-section h1 {
+    line-height: 0.8;
+    font-size: calc(6.2rem + 2vw);
+    text-shadow: 1px 1px 8px rgb(0 0 0 / 20%);
+}
+
+.boat-banner-section h4 {
+    font-size: calc(1.9rem + 0.2vw);
+    text-shadow: 1px 1px 8px rgb(0 0 0 / 25%);
+}
+
+@media screen and (max-width: 767px) {
+    .boat-banner-section {
+        height: 538px;
+        background-attachment: initial;
+        background-size: 760px;
+        background-position: top;
+    }
+
+    .boat-banner-section h1 {
+        line-height: 0.9;
+        font-size: calc(3.9rem + 0.3vw);
+    }
+
+    .boat-banner-section h4 {
+        font-size: calc(1.5rem + 0.5vw);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .boat-banner-section {
+        background-size: 645px;
+    }
+
+    .boat-banner-section::before {
+        bottom: inherit;
+        height: 90%;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Boat Prices Section
+--------------------------------------------------------------*/
+
+.boat-prices-section {
+    margin-top: -130px;
+}
+
+.boat-prices-section div {
+    background-color: #fff;
+    z-index: 4;
+}
+
+.boat-prices-section p {
+    width: 45px;
+    margin-bottom: 0;
+}
+
+.boat-prices-section .boat-prices-separator {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin: 4px 0;
+}
+
+.boat-prices-section .boat-prices {
+    width: fit-content;
+}
+
+@media screen and (max-width: 767px) {
+    .boat-prices-section {
+        margin-top: 0;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Boat Gallery Section
+--------------------------------------------------------------*/
+
+.boat-gallery-section .gallery-image {
+    padding: 0 !important;
+    height: 500px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.boat-gallery-section .gallery-image img {
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+.boat-gallery-section .gallery-row:nth-child(1) .gallery-image:nth-child(1), .boat-gallery-section .gallery-row:nth-child(2) .gallery-image:nth-child(2) {
+    flex: 1.2;
+}
+
+.boat-gallery-section .gallery-row:nth-child(1) .gallery-image:nth-child(2), .boat-gallery-section .gallery-row:nth-child(2) .gallery-image:nth-child(1) {
+    flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .boat-gallery-section .gallery-image {
+        height: 300px;
+        flex: inherit !important;
+        margin: 4px;
     }
 }
