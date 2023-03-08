@@ -158,8 +158,9 @@ body > section:first-of-type {
     border-color: var(--color-secondary) !important;
 }
 
-.thm-btn-dark:hover, .thm-btn-light:hover {
+.thm-btn-dark:hover, .thm-btn-light:hover, .thm-btn-light2:hover {
     background-color: rgba(3, 9, 56, 0.4);
+    color: #fff !important;
     border-color: #fff !important;
 }
 
@@ -182,12 +183,6 @@ body > section:first-of-type {
     box-shadow: inset 0px 1px 0px #1c2251, inset 0 -1px 2px #000004;
     color: #fff;
     border-width: 3px;
-}
-
-.thm-btn-light2:hover {
-    background: rgba(43, 176, 53, 1);
-    color: #fff;
-    border-color: rgba(43, 176, 53, 1) !important;
 }
 
 .thm-btn-dark:active, .thm-btn-dark2:active, .thm-btn-dark3:active {
@@ -1018,6 +1013,11 @@ body > section:first-of-type {
     width: 250px;
     padding: 13px 19px;
     font-size: calc(1.1rem + 0.1vw);
+}
+
+.faqs-section .thm-btn-light2:hover {
+    background: rgba(43, 176, 53, 1) !important;
+    border-color: rgba(43, 176, 53, 1) !important;
 }
 
 @media screen and (min-width: 768px) {
