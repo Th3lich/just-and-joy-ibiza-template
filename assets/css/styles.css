@@ -1,3 +1,35 @@
+/* Author: Javier López López
+   Version: 1.0
+   Date: 07/03/2023
+   File Description: Css file for theme styles
+*/
+/****************************************\
+01.General
+02.Buttons
+03.Forms
+04.Navbar
+05.Boat card
+06.Banner section
+07.Logos section && Restaurants section
+08.Video section
+09.Memories section
+10.People Comments section
+11.Boats section
+12.Onboard Features section
+13.Why Us section
+14.FAQs section
+15.Contact section
+16.All Boats section
+17.Footer
+18.Floating button
+19.Search sidebar
+*****************************************/
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
 :root {
     --color-primary: #000236;
     --color-secondary: #BBA14F;
@@ -8,7 +40,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;300&display=swap');
 
-/* Global styles */
+
 html, body {
     font-family: 'Montserrat Thin', sans-serif;
     color: var(--color-tertiary);
@@ -19,6 +51,1311 @@ h1, h2, h3 {
     color: var(--color-primary);
 }
 
+h4, h5 {
+    font-family: 'Montserrat', serif;
+}
+
 p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Thin', sans-serif;
+}
+
+h2 {
+    font-size: calc(3.2rem + 0.8vw);
+    line-height: 0.8;
+}
+
+h3 {
+    font-size: calc(2.5rem + 0.4vw);
+    line-height: 0.9;
+}
+
+/* Container */
+.thm-container {
+    max-width: 1100px;
+}
+
+@media screen and (max-width: 767px) {
+    .thm-container {
+        max-width: 350px;
+    }
+}
+
+/* Colors */
+.thm-color-primary {
+    color: var(--color-primary);
+}
+
+.thm-color-secondary {
+    color: var(--color-secondary);
+}
+
+/* Fonts */
+.thm-font-primary {
+    font-family: 'Marcellus', serif;
+}
+
+.thm-font-secondary {
+    font-family: 'Montserrat Thin', sans-serif;
+}
+
+/* Backgrounds */
+.bg-primary-separator {
+    background-color: var(--color-primary);
+    height: 13px;
+    width: 100%;
+}
+
+/* First section */
+body > section:first-of-type {
+    margin-top: 72px;
+}
+
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+
+.thm-btn-dark, .thm-btn-dark2, .thm-btn-dark3, .thm-btn-light, .thm-btn-light2 {
+    width: fit-content;
+    min-width: calc(195px + 0.4vw);
+    padding: 16px 22px;
+    border-radius: 10px;
+    font-size: calc(0.9rem + 0.2vw);
+    font-weight: 600;
+    font-family: 'Marcellus', serif;
+    font-style: normal;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem !important;
+}
+
+.thm-btn-dark, .thm-btn-dark2, .thm-btn-dark3 {
+    color: #fff !important;
+}
+
+.thm-btn-dark {
+    background-color: var(--color-secondary);
+    border-color: var(--color-secondary) !important;
+}
+
+.thm-btn-dark2 {
+    padding: 12px 22px;
+    background-color: var(--color-primary);
+    border-color: var(--color-primary) !important;
+    font-size: calc(0.8rem + 0.15vw);
+}
+
+.thm-btn-dark3 {
+    background-color: var(--color-secondary);
+    padding: 10px 24px;
+    border-radius: 0;
+    border-color: #fff !important;
+    box-shadow: 0px 0px 0px 2px var(--color-secondary);
+}
+
+.thm-btn-light, .thm-btn-light2 {
+    background-color: rgba(255, 255, 255, 0.96);
+    color: var(--color-secondary);
+}
+
+.thm-btn-light {
+    border-color: #fff !important;
+    box-shadow: inset 0px 1px 0px #ffffff, inset 0 -1px 2px #cccccc;
+}
+
+.thm-btn-light2 {
+    border-width: 3px;
+    border-color: var(--color-secondary) !important;
+}
+
+.thm-btn-dark:hover, .thm-btn-light:hover, .thm-btn-light2:hover {
+    background-color: rgba(3, 9, 56, 0.4);
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.thm-btn-dark3:hover {
+    background-color: #fff;
+    color: var(--color-secondary) !important;
+}
+
+.thm-btn-dark3:hover svg {
+    fill: var(--color-secondary);
+}
+
+.thm-btn-dark2:hover {
+    background-color: var(--color-secondary);
+    border-color: #fff !important;
+}
+
+.thm-btn-light:hover {
+    padding: 14px 19px;
+    box-shadow: inset 0px 1px 0px #1c2251, inset 0 -1px 2px #000004;
+    color: #fff;
+    border-width: 3px;
+}
+
+.thm-btn-dark:active, .thm-btn-dark2:active, .thm-btn-dark3:active {
+    background-color: rgba(187, 162, 94, 1) !important;
+}
+
+.thm-btn-light:active {
+    background-color: rgba(3, 9, 56, 0.96) !important;
+    color: var(--color-secondary) !important;
+}
+
+.thm-btn-light2:active {
+    color: var(--color-secondary) !important;
+    border-color: #fff !important;
+}
+
+@media screen and (max-width: 767px) {
+    .thm-btn-dark, .thm-btn-light, .thm-btn-light2 {
+        padding: 14px 22px;
+    }
+
+    .thm-btn-light:hover {
+        padding: 12px 19px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+.thm-form-control {
+    padding: 12px 12px;
+    color: #6D6D6D;
+    font-size: 0.9rem;
+    line-height: 15px;
+    border: 1px solid #6D6D6D !important;
+    border-radius: 0;
+    box-shadow: inset 0px 2px 3px #ddd !important;
+    -webkit-box-shadow: inset 0px 2px 3px #ddd !important;
+    -moz-box-shadow: inset 0px 2px 3px #ddd !important;
+}
+
+.thm-form-check-label {
+    font-size: calc(0.8rem + 0.05vw);
+}
+
+
+/*--------------------------------------------------------------
+# Navbar
+--------------------------------------------------------------*/
+
+.thm-navbar {
+    height: 72px;
+    padding: 0;
+    z-index: 100;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.thm-navbar .navbar-nav .nav-item {
+    padding: 4px;
+    min-width: 86px;
+}
+
+.thm-navbar .navbar-nav .nav-item a {
+    color: var(--color-primary);
+}
+
+.thm-navbar .thm-btn-dark {
+    padding: 13px 21px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .thm-navbar .logo {
+        width: 110px;
+    }
+
+    .thm-navbar .thm-btn-dark {
+        padding: 12px 19px !important;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Boat card
+--------------------------------------------------------------*/
+
+.boat-card {
+    color: inherit;
+    text-decoration: none;
+    transition: background 250ms, border-radius 250ms,;
+}
+
+.boat-card:hover {
+    background-color: rgba(2, 7, 53, 0.08);
+    border-radius: 10px;
+    color: inherit;
+}
+
+.boat-card .boat-image {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.boat-card .boat-items {
+    gap: 2px;
+}
+
+.boat-card .boat-item {
+    gap: 12px;
+}
+
+.boat-card .boat-item p {
+    font-size: 0.875rem;
+}
+
+.boat-card .boat-item:nth-child(2) img {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.boat-card .boat-more {
+    width: 200px;
+    height: fit-content;
+    padding: 8.5px 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.1;
+}
+
+
+/*--------------------------------------------------------------
+# Banner section
+--------------------------------------------------------------*/
+
+.banner-section {
+    height: 711px;
+    background-image: url(../images/bg_banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(162, 158, 158, 0.38);
+    z-index: 2;
+}
+
+.banner-section div {
+    z-index: 3;
+}
+
+.banner-section h1 {
+    line-height: 1;
+    font-size: calc(3.425rem + 0.3vw);
+}
+
+@media screen and (max-width: 767px) {
+    .banner-section {
+        height: 538px;
+        background-attachment: initial;
+        background-image: url(../images/bg_banner_mb.jpg);
+    }
+
+    .banner-section h1 {
+        line-height: 0.9;
+        font-size: calc(2.625rem + 0.3vw);
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Logos section && Restaurants section
+--------------------------------------------------------------*/
+
+.logos-section, .restaurants-section {
+    background: var(--color-primary);
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+}
+
+.logos-section {
+    border-top: 1px solid var(--color-secondary);
+}
+
+.logos-section .logos-list, .restaurants-section .logos-list {
+    gap: 6px;
+}
+
+.restaurants-section h6 {
+    font-size: 0.813rem;
+}
+
+/* Arrow up */
+
+.arrow-up {
+    width: 71px;
+    height: 71px;
+    background-color: #fff;
+    border: 2px solid var(--color-primary);
+    border-radius: 144px;
+    z-index: 106;
+    top: -50px;
+    right: 12px;
+}
+
+@media screen and (max-width: 767px) {
+    .logos-section .logos-list {
+        gap: 4px;
+    }
+
+    .logos-section .logos-list img:nth-child(1) {
+        width: 108px;
+        height: 14px;
+    }
+    
+    .logos-section .logos-list img:nth-child(2) {
+        width: 64px;
+        height: 32px;
+    }
+    
+    .logos-section .logos-list img:nth-child(3) {
+        width: 105px;
+        height: 18px;
+    }
+    
+    .logos-section .logos-list img:nth-child(4) {
+        width: 79px;
+        height: 23px;
+    }
+    
+    .logos-section .logos-list img:nth-child(5) {
+        width: 77px;
+        height: 16px;
+    }
+    
+    .logos-section .logos-list img:nth-child(6) {
+        width: 81px;
+        height: 19px;
+    }
+
+    .restaurants-section > div {
+        padding-bottom: 54px;
+    }
+
+    .restaurants-section .logos-list img {
+        margin-bottom: 19px;
+    }
+
+    .arrow-up {
+        height: 65px;
+        width: 65px;
+        border: inherit;
+        border-radius: 142px;
+        top: inherit;
+        bottom: -45px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Video section
+--------------------------------------------------------------*/
+
+.video-section {
+    height: 645px;
+    background-color: rgba(115, 173, 179, 0.49);
+}
+
+.video-section .youtube {
+    top: -11%;
+    left: 0px;
+    height: 122%;
+    width: 100%;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+.video-section h3 {
+    font-size: calc(2.4rem + 0.2vw);
+}
+
+.video-section p {
+    font-size: calc(1.125rem + 0.1vw);
+}
+
+@media screen and (max-width: 767px) {
+    .video-section {
+        height: inherit !important;
+        background-color: #fff;
+    }
+
+    .video-section h3 {
+        font-size: calc(1.225rem + 0.2vw);
+        color: var(--color-secondary) !important;
+        margin-bottom: 0;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Memories section
+--------------------------------------------------------------*/
+
+.memories-section {
+    min-height: 680px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.memories-section .row {
+    max-height: 350px;
+}
+
+.memories-section p {
+    font-size: calc(1.1rem + 0.1vw);
+}
+
+.memories-section .collage {
+    position: absolute;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.memories-section .collage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.memories-section .collage-1 {
+    width: 305px;
+    height: 223px;
+    left: 74px;
+    top: -245px;
+    z-index: 11;
+    /* top: 1344px; */
+}
+
+.memories-section .collage-2 {
+    width: 208px;
+    height: 276px;
+    left: -23px;
+    top: -81px;
+    z-index: 12;
+}
+
+.memories-section .collage-3 {
+    width: 173px;
+    height: 132px;
+    left: 113px;
+    top: 236px;
+    z-index: 79;
+}
+
+.memories-section .collage-4 {
+    width: 206px;
+    height: 274px;
+    left: 259px;
+    top: 9px;
+    z-index: 78;
+}
+
+.memories-section .collage-5 {
+    width: 208px;
+    height: 276px;
+    left: 408px;
+    top: -206px;
+    z-index: 57;
+}
+
+.memories-section .collage-6 {
+    width: 144px;
+    height: 197px;
+    left: 446px;
+    top: 203px;
+    z-index: 22;
+}
+
+.memories-section .star-circle {
+    width: 168px;
+    height: 168px;
+    border: 1px solid #fff;
+    border-radius: 119px;
+    right: 12px;
+    top: -304px;
+    z-index: 46;
+}
+
+.memories-section .star-circle p {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.memories-section .star-circle p:first-child {
+    font-size: calc(3.375rem + 0.5vw);
+    line-height: 0.6;
+}
+
+.memories-section .star-circle p:nth-child(2) {
+    font-size: calc(2.125rem + 0.3vw);
+    line-height: 1;
+}
+
+.memories-section .star-circle .star {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .memories-section {
+        min-height: 1213px;
+    }
+
+    .memories-section .collage-1 {
+        display: none;
+    }
+
+    .memories-section .collage-2 {
+        width: 270.5px;
+        height: 192px;
+        left: 43px;
+        top: 530px;
+    }
+
+    .memories-section .collage-3 {
+        width: 177px;
+        height: 133px;
+        left: 136.5px;
+        top: 370px;
+    }
+
+    .memories-section .collage-4 {
+        width: 160px;
+        height: 209px;
+        left: 5px;
+        top: 399px;
+    }
+
+    .memories-section .collage-5 {
+        width: 186px;
+        height: 248px;
+        left: 128px;
+        top: -368px;
+    }
+
+    .memories-section .collage-6 {
+        left: 5px;
+        top: -411px;
+    }
+
+    .memories-section .star-circle {
+        width: 155px;
+        height: 155px;
+        border: 1px solid #0309;
+        border-radius: 119px;
+        left: 16px;
+        top: -201px;
+    }
+
+    .memories-section .star-circle p {
+        color: rgb(3, 9, 56);
+        width: 100%;
+        text-align: center;
+    }
+
+    .memories-section .star-circle p:first-child {
+        text-align: start;
+        margin-top: 16px;
+        padding-left: 22px;
+    }
+
+    .memories-section .star-circle .star {
+        left: -16px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# People Comments section
+--------------------------------------------------------------*/
+
+.people-comments-section {
+    background: var(--color-primary);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.people-comments-section h3 {
+    font-size: calc(2.125rem + 0.3vw);
+    line-height: 1;
+}
+
+.people-comments-section .comment-card {
+    min-height: 100%;
+    border-radius: 10px;
+    font-size: calc(1rem + 0.15vw);
+    line-height: 1.2;
+}
+
+.people-comments-section .comment-avatar {
+    bottom: -50px;
+}
+
+.people-comments-section .comment-avatar img {
+    border: 2px solid #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Boats section
+--------------------------------------------------------------*/
+
+.boats-section > div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 286px;
+    height: 210px;
+    background-color: var(--color-primary);
+    z-index: -1;
+}
+
+.boats-section .boats-title {
+    padding-top: 146px;
+}
+
+.boats-section .boats-title div:nth-child(1) {
+    width: 286px;
+}
+
+.boats-section .boats-title div:nth-child(2) {
+    flex: 1;
+    padding-left: 68px;
+}
+
+.boats-section .boats-title h2 {
+    line-height: 0.94;
+}
+
+.boats-section .boats-title .boats-separator {
+    width: 100%;
+    border-bottom: 3px solid var(--color-primary);
+    border-radius: 0;
+}
+
+.boats-section .boats-title div:nth-child(2) h2 {
+    line-height: 0.94;
+}
+
+.boats-section .boats-title h5 {
+    font-size: calc(1.5rem + 0.34vw);
+    padding-right: calc(3px + 0.1vw);
+}
+
+.boats-section .boats-title .boat-clock {
+    top: -20px;
+    right: 66px;
+    z-index: -1;
+}
+
+.see-more-card {
+    box-shadow: 15px 15px 45px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    height: 100%;
+    padding: 24px 34px;
+}
+
+.see-more-card > div {
+    flex: 1;
+}
+
+.see-more-card p {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .boats-section .boats-title .boat-clock {
+        width: 45px;
+        height: 45px;
+        right: 55px;
+        z-index: -1;
+    }
+
+    .boats-section .boats-title h5, .boats-section .boats-title div:nth-child(2) h2 {
+        line-height: 0.8;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Onboard Features section
+--------------------------------------------------------------*/
+
+.onboard-features-section {
+    position: relative;
+    background-image: url(../images/include_home.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.onboard-features-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(162, 158, 158, 0.52);
+    z-index: 2;
+}
+
+.onboard-features-section .onboard-feature-card, .onboard-features-section h3 {
+    z-index: 3;
+}
+
+.onboard-features-section .onboard-feature-card {
+    width: 368px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.onboard-features-section .onboard-feature-title {
+    width: fit-content;
+    top: -25px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: auto;
+    padding: .8rem 4rem;
+}
+
+.onboard-features-section .onboard-feature-title h5 {
+    font-size: calc(1.5rem + 0.2vw);
+    margin-bottom: 0;
+}
+
+.onboard-features-section .onboard-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 16px;
+    margin: 8px 0;
+}
+
+.onboard-features-section .onboard-feature p {
+    font-size: calc(1.1rem + 0.09vw);
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .onboard-features-section {
+        background-image: url(../images/include_home_mb.jpg);
+        background-attachment: initial;
+    }
+    .onboard-features-section .onboard-feature-card {
+        width: 302px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Why Us section
+--------------------------------------------------------------*/
+
+.why-us-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background-color: var(--color-secondary);
+    z-index: -1;
+}
+
+.why-us-section .why-us-separator {
+    border-bottom: 1px solid #ccc;
+    width: 102px;
+}
+
+.why-us-section .why-us-item {
+    flex-basis: 0;
+    padding: 0;
+}
+
+.why-us-section .why-us-image-border {
+    border: 8px solid #fff;
+    width: fit-content;
+}
+
+.why-us-section .why-us-item h4 {
+    font-size: calc(1.6rem + 0.4vw);
+    font-weight: bold;
+}
+
+.why-us-section .why-us-item p {
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 767px) {
+    .why-us-section::before {
+        top: 0;
+        bottom: inherit;
+        width: 100%;
+        height: 270px;
+    }
+
+    .why-us-section::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 932px;
+        width: 100%;
+        height: 124px;
+        background-color: var(--color-secondary);
+        z-index: -1;
+    }
+
+    .why-us-section h3 {
+        font-size: 2rem;
+    }
+
+    .why-us-section .why-us-item {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .why-us-section .why-us-item p, .why-us-section .why-us-item h4 {
+        color: var(--color-tertiary) !important;
+    }
+
+    .why-us-section .why-us-separator {
+        border-bottom-color: var(--color-primary);
+    }
+
+    .why-us-section .check-availability, .why-us-section .plan-my-trip {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .why-us-section .check-availability {
+        position: absolute !important;
+        left: 0;
+        top: 290px;
+        right: 0;
+        z-index: 3;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# FAQs section
+--------------------------------------------------------------*/
+
+.faqs-section .faq-quests {
+    padding-left: 1rem;
+}
+
+.faqs-section .faqs-separator {
+    width: 32px;
+    height: 22px;
+    border-top: 1px solid var(--color-secondary);
+    border-radius: 0;
+}
+
+.faqs-section .faqs-quest-col {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.faqs-section .faq-quest {
+    font-size: calc(1rem + 0.13vw);
+    cursor: pointer;
+}
+
+.faqs-section .faq-quest p {
+    font-family: 'Montserrat';
+    margin-bottom: 0.5rem;
+}
+
+.faqs-section .faq-answer {
+    padding: 0 15px;
+    border-left: 1px solid #ccc;
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s ease-in;
+    margin-bottom: 1rem;
+}
+
+.faqs-section .more-questions-col h3 {
+    font-size: calc(2.1rem + 1vw);
+    line-height: 0.9;
+}
+
+.faqs-section .more-questions-col a {
+    width: 250px;
+    padding: 13px 19px;
+    font-size: calc(1.1rem + 0.1vw);
+}
+
+.faqs-section .thm-btn-light2:hover {
+    background: rgba(43, 176, 53, 1) !important;
+    border-color: rgba(43, 176, 53, 1) !important;
+}
+
+@media screen and (min-width: 768px) {
+    .faqs-section .faqs-quest-col {
+        flex: 1;
+        padding: 0 2rem;
+    }
+
+    .faqs-section .faqs-separator {
+        width: 1px;
+        height: 325px;
+        border-left: 1px solid #ccc;
+        border-top: inherit;
+        border-radius: 0;
+    }
+
+    .faqs-section .more-questions-col a {
+        width: inherit;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Contact section
+--------------------------------------------------------------*/
+
+.contact-section .thm-btn-dark {
+    padding: 13px 22px;
+}
+
+.contact-section .contact-us h4 {
+    font-size: calc(1.5rem + 0.1vw);
+}
+
+.contact-section .contact-us h5 {
+    font-size: calc(1.325rem + 0.1vw);
+}
+
+.contact-section .unique-memories {
+    height: 700px;
+    overflow: hidden;
+}
+
+.contact-section .unique-memories-card {
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 3;
+}
+
+.contact-section .unique-memories img {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .contact-section .unique-memories {
+        height: 400px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# All Boats section
+--------------------------------------------------------------*/
+
+.all-boats-section .btn-filter {
+    min-width: inherit;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+    padding: 14.5px 0;
+}
+
+footer p, footer a, footer span {
+    font-size: 0.75rem;
+    color: #a9a9a9;
+    z-index: 98;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #a9a9a9;
+}
+
+footer .separator {
+    height: 22px;
+    border-left: 1px solid #ccc;
+    border-radius: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Floating button
+--------------------------------------------------------------*/
+
+.floating-button {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    right: 0;
+    margin: 18px;
+    background: #25d366;
+    box-shadow: 0 10px 25px -5px rgb(37 211 102 / 50%);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    line-height: 55px;
+    z-index: 99;
+}
+
+
+/*--------------------------------------------------------------
+# Search sidebar
+--------------------------------------------------------------*/
+
+.search-sidebar {
+    padding-top: 24px;
+    z-index: 901;
+}
+
+.search-sidebar .thm-btn-dark {
+    padding: 10px 24px;
+    border-radius: 0;
+    border-color: #fff !important;
+    box-shadow: 0px 0px 0px 2px var(--color-secondary);
+}
+
+@media screen and (min-width: 1600px) {
+    .search-sidebar {
+        padding-top: 0;
+        margin-top: 72px;
+        border: none !important;
+        transition: none;
+        visibility: visible !important;
+        transform: none !important;
+    }
+
+    .search-sidebar .btn-close {
+        display: none !important;
+    }
+
+    .btn-filter {
+        display: none !important;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Boat Banner section
+--------------------------------------------------------------*/
+
+.boat-banner-section {
+    height: 711px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.boat-banner-section::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 241, 241, 0.13);
+    z-index: 2;
+}
+
+.boat-banner-section div {
+    z-index: 3;
+}
+
+.boat-banner-section .boat-banner-title {
+    width: fit-content;
+}
+
+.boat-banner-section h1 {
+    line-height: 0.8;
+    font-size: calc(6.2rem + 2vw);
+    text-shadow: 1px 1px 8px rgb(0 0 0 / 20%);
+}
+
+.boat-banner-section h4 {
+    font-size: calc(1.9rem + 0.2vw);
+    text-shadow: 1px 1px 8px rgb(0 0 0 / 25%);
+}
+
+@media screen and (max-width: 767px) {
+    .boat-banner-section {
+        height: 538px;
+        background-attachment: initial;
+        background-size: 760px;
+        background-position: top;
+    }
+
+    .boat-banner-section h1 {
+        line-height: 0.9;
+        font-size: calc(3.9rem + 0.3vw);
+    }
+
+    .boat-banner-section h4 {
+        font-size: calc(1.5rem + 0.5vw);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .boat-banner-section {
+        background-size: 645px;
+    }
+
+    .boat-banner-section::before {
+        bottom: inherit;
+        height: 90%;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Boat Prices section
+--------------------------------------------------------------*/
+
+.boat-prices-section {
+    margin-top: -130px;
+}
+
+.boat-prices-section div {
+    background-color: #fff;
+    z-index: 4;
+}
+
+.boat-prices-section p {
+    width: 45px;
+    margin-bottom: 0;
+}
+
+.boat-prices-section .boat-prices-separator {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    margin: 4px 0;
+}
+
+.boat-prices-section .boat-prices {
+    width: fit-content;
+}
+
+@media screen and (max-width: 767px) {
+    .boat-prices-section {
+        margin-top: 0;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Boat Gallery section
+--------------------------------------------------------------*/
+
+.boat-gallery-section .gallery-image {
+    padding: 0 !important;
+    height: 500px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.boat-gallery-section .gallery-image img {
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+.boat-gallery-section .gallery-row:nth-child(1) .gallery-image:nth-child(1), .boat-gallery-section .gallery-row:nth-child(2) .gallery-image:nth-child(2) {
+    flex: 1.2;
+}
+
+.boat-gallery-section .gallery-row:nth-child(1) .gallery-image:nth-child(2), .boat-gallery-section .gallery-row:nth-child(2) .gallery-image:nth-child(1) {
+    flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .boat-gallery-section .gallery-image {
+        height: 300px;
+        flex: inherit !important;
+        margin: 4px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Boat Description section
+--------------------------------------------------------------*/
+
+.boat-description-section h4 {
+    font-size: calc(1.7rem + 0.3vw);
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.boat-description-section .boat-description-separator {
+    margin: 0 calc(18px + 0.5vw) 1.1rem;
+    width: calc(100% - calc(44px + 1vw));
+    height: calc(7px + 0.08vw);
+    background-color: var(--color-secondary);
+}
+
+.boat-description-section p {
+    color: var(--color-primary);
+}
+
+.boat-description-section .boat-vat p {
+    color: inherit;
 }

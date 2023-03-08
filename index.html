@@ -1,24 +1,633 @@
 <!doctype html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- SEO Meta Tags -->
-        <title>Just&amp;Joy Ibiza - Just Enjoy Ibiza Boat and Charter Rental With a Personal Touch</title>
-        <meta name="keywords" content="Just&amp;Joy Ibiza, Just Enjoy, Ibiza, Formentera, boat rental, charter rental, yachts rental, ibiza captain services, groups, family, couples, snorkeling, restaurant booking, visit ibiza">
+        <title>Just Enjoy Ibiza - Just Enjoy Ibiza Boat and Charter Rental With a Personal Touch</title>
+        <meta name="keywords" content="JustEnjoy Ibiza, Just Enjoy, Ibiza, Formentera, boat rental, charter rental, yachts rental, ibiza captain services, groups, family, couples, snorkeling, restaurant booking, visit ibiza">
         <meta name="description" content="Premium Boat Rental Service in Ibiza and Formentera to Discover Hidden Places with a Personalised Service">
-        <meta property="og:title" content="Just&amp;amp;Joy Ibiza - Just Enjoy Ibiza Boat and Charter Rental With a Personal Touch">
-        
-        <!-- App Styles -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <meta property="og:title" content="JustEnjoy Ibiza - Just Enjoy Ibiza Boat and Charter Rental With a Personal Touch">
 
         <!-- External Styles -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <!-- App Styles -->
+        <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg thm-navbar fixed-top bg-white">
+            <div class="container thm-container">
+                <a href="/">
+                    <img class="logo d-inline-block" src="assets/images/justenjoy-logo.svg" alt="Logo" width="124">
+                </a>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#boats_section">Boats</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#why_us_section">Offer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faqs_section">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex">
+                    <a href="#" class="btn thm-btn-dark ms-0 ms-md-4"><span>BOOK MY CHARTER</span></a>
+                </div>
+            </div>
+        </nav>
         
+        <!-- Banner Section -->
+        <section class="banner-section">
+            <div class="container thm-container py-3 py-md-4">
+                <div class="row text-center">
+                    <div class="col">
+                        <img class="mb-3 mb-md-5" src="assets/images/justenjoy-logo.svg" alt="Logo" width="124">
+                        <h1 class="mb-2 pb-1 text-white z-index-3 d-none d-md-block">Just enjoy the <span class="thm-color-secondary">trip of your life.</span><br>Boat rental in Ibiza with a personal touch.</h1>
+                        <h1 class="mb-2 pb-1 text-white z-index-3 d-block d-md-none">Personalised boat rental in Ibiza</h1>
+                        <h4 class="mb-5 pb-4 text-white d-none d-md-block">Discover <span class="thm-color-secondary fw-semibold">hidden places</span> in Ibiza and Formentera with a <span class="thm-color-secondary fw-semibold">private charter.</span></h4>
+                        <h5 class="mb-5 pb-5 text-white d-block d-md-none fw-semibold">Just Enjoy the best hidden places around <span class="thm-color-secondary">Ibiza</span> and <span class="thm-color-secondary">Formentera</span>.</h5>
+                        <a href="#" class="btn thm-btn-light mx-auto">BOOK MY CHARTER</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Logos Section -->
+        <section class="logos-section">
+            <div class="container thm-container">
+                <div class="row">
+                    <div class="col-12 col-md-6 logos-list d-flex justify-content-around align-items-center pe-md-0">
+                        <img src="assets/images/fjord-logo-white.svg" alt="Logo Fjord" width="103" height="22">
+                        <img src="assets/images/pardo-yachts-logo-white.svg" alt="Logo Pardo Yachts" width="121" height="35">
+                        <img src="assets/images/de-antonio-logo-black-white.svg" alt="Logo De Antonio Yachts" width="134" height="31">
+                    </div>
+                    <div class="col-12 col-md-6 logos-list d-flex justify-content-around align-items-center ps-md-0">
+                        <img src="assets/images/logo-black-white.svg" alt="Logo VQ Yachts" width="143" height="25">
+                        <img src="assets/images/sunseeker-logo-white.svg" alt="Logo Sunseeker" width="100" height="50">
+                        <img src="assets/images/quicksilver-logo-white.svg" alt="Logo Quicksilver" width="150" height="20">
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="container-fluid h-100 position-relative d-flex align-items-center justify-content-center">
+                <div class="container thm-container">
+                    <div class="row">
+                        <div class="col">
+                            <h3 class="text-white ps-md-3 pt-4 pt-md-0 text-center text-md-start">Your best friend on the island.</h3>
+                            <p class="text-white ps-md-3 pb-5 d-none d-md-block">Taking you to hidden places, making you <span class="thm-color-secondary fw-semibold">relax and have fun</span>.</p>
+                        </div>
+                    </div>
+                </div>
+                <iframe class="youtube d-none d-md-block" id="lp-pom-block-160-video-background-iframe" src="https://www.youtube.com/embed/krAMazC_W9Q?mute=1&amp;rel=0&amp;loop=1&amp;modestbranding=1&amp;showinfo=0&amp;controls=0&amp;iv_load_policy=3&amp;autohide=1&amp;autoplay=1&amp;disablekb=1&amp;fs=0&amp;html5=1&amp;enablejsapi=1&amp;playlist=krAMazC_W9Q" frameborder="0" allowfullscreen="" title="video j&amp;j background LP HD 1080p"></iframe>
+            </div>
+        </section>
+        
+        <!-- Memories Section -->
+        <section class="memories-section d-flex align-items-center">
+            <div class="container thm-container">
+                <div class="row">
+                    <div class="col position-relative">
+                        <div class="collage collage-1">
+                            <img src="assets/images/collage_home1.jpg" alt="Collage home 1">
+                        </div>
+                        <div class="collage collage-2">
+                            <img src="assets/images/collage_home2.jpg" alt="Collage home 2">
+                        </div>
+                        <div class="collage collage-3">
+                            <img src="assets/images/collage_home3.jpeg" alt="Collage home 3">
+                        </div>
+                        <div class="collage collage-4">
+                            <img src="assets/images/collage_home4.jpg" alt="Collage home 4">
+                        </div>
+                        <div class="collage collage-5">
+                            <img src="assets/images/collage_home5.jpeg" alt="Collage home 5">
+                        </div>
+                        <div class="collage collage-6">
+                            <img src="assets/images/collage_home6.jpg" alt="Collage home 6">
+                        </div>
+                        <div class="star-circle position-absolute d-flex align-items-center justify-content-center flex-column">
+                            <p>10+</p>
+                            <p>years</p>
+                            <p>of excellence</p>
+                            <img class="star" src="assets/images/star.png">
+                        </div>
+                    </div>
+                    <div class="offset-md-7 col-md-5 text-center text-md-start">
+                        <h2 class="mb-2 mb-md-3 text-start">Create<br>unforgettable<br>memories</h2>
+                        <p class="mb-3 mb-md-4 text-start">From luxurious yachts to a range of boats for <span class="fw-semibold">groups</span>, <span class="fw-semibold">couples</span> and <span class="fw-semibold">families</span>, Just Enjoy is the only company you need to find your perfect boat.</p>
+                        <a href="#" class="btn thm-btn-dark mx-auto mx-md-0">GET MY BOAT NOW</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- People Comments Section -->
+        <section class="people-comments-section py-3 py-md-5">
+            <div class="container thm-container">
+                <h3 class="text-white text-center mb-4 mb-md-5 d-flex flex-column flex-md-row justify-content-center"><span>People enjoying&nbsp;</span><span>Just Enjoy Ibiza</span></h3>
+                <div class="row">
+                    <div class="col-md-6 mb-5 d-none d-md-block">
+                        <div class="comment-card bg-white position-relative ms-md-4 me-md-3 p-2 p-md-4">
+                            <div class="comment-content">
+                                <p class="card-text">"Good memories is what captain Alin wishes for all his clients. <strong>Our dearest memories in Ibiza</strong> are actually with him! We thank him for all the moments that we had during our day in Formentera and És Vedra. 👍❤️"</p>
+                            </div>
+                            <div class="comment-avatar position-absolute d-flex justify-content-end align-items-center start-0 end-0 w-100 pe-4">
+                                <div>
+                                    <h6 class="text-white mb-0 mt-2">REMCO Van Ahee</h6>
+                                </div>
+                                <div class="ms-3 me-md-5">
+                                    <img src="assets/images/people_comment_1.jpeg" alt="Avatar" class="rounded-circle" width="75" height="75">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <div class="comment-card bg-white position-relative ms-md-3 me-md-4 ps-2 pt-3 pe-2 pb-4 p-md-4">
+                            <div class="comment-content">
+                                <p class="card-text">"<strong>What a great day with an experienced captain</strong>! We felt safe on the boat and enjoyed the scuba diving. Looking forward to another great trip! Thank you and <strong>see you next year</strong>!!"</p>
+                            </div>
+                            <div class="comment-avatar position-absolute d-flex justify-content-end align-items-center start-0 end-0 w-100 pe-4">
+                                <div>
+                                    <h6 class="text-white mb-0 mt-2">PEDRO Oliveira</h6>
+                                </div>
+                                <div class="ms-3 me-md-5">
+                                    <img src="assets/images/people_comment_2.jpeg" alt="Avatar" class="rounded-circle" width="75" height="75">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Boats Section -->
+        <section id="boats_section" class="boats-section">
+            <div class="container thm-container position-relative pt-3 pt-sm-2 pt-xl-0">
+                <div class="row boats-title justify-content-between pb-4">
+                    <div>
+                        <h2><span class="thm-color-secondary">Boats</span><br>for every<br>occasion</h2>
+                    </div>
+                    <div class="text-end position-relative">
+                        <h2 class="mb-0">8h</h2>
+                        <div class="boats-separator d-none d-md-block"></div>
+                        <h5 class="thm-color-primary">trips</h5>
+                        <img class="boat-clock position-absolute" src="assets/images/ic_clock.png" alt="Clock icon" width="59" height="60">
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 gx-3 gy-4 pb-5 py-md-5">
+                    <div class="col">
+                        <a class="boat-card d-block" href="boat.html">
+                            <div class="boat-image position-relative mb-2">
+                                <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                                <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                            </div>
+                            <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                                <div class="boat-items d-flex flex-column">
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                        <p class="mb-0">6 + 1 crew</p>
+                                    </div>
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                        <p class="mb-0">6.00M</p>
+                                    </div>
+                                </div>
+                                <div class="boat-more">From 350€/day<br>- click for more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="boat-card d-block" href="boat.html">
+                            <div class="boat-image position-relative mb-2">
+                                <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                                <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                            </div>
+                            <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                                <div class="boat-items d-flex flex-column">
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                        <p class="mb-0">6 + 1 crew</p>
+                                    </div>
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                        <p class="mb-0">6.00M</p>
+                                    </div>
+                                </div>
+                                <div class="boat-more">From 350€/day<br>- click for more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="boat-card d-block" href="boat.html">
+                            <div class="boat-image position-relative mb-2">
+                                <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                                <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                            </div>
+                            <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                                <div class="boat-items d-flex flex-column">
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                        <p class="mb-0">6 + 1 crew</p>
+                                    </div>
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                        <p class="mb-0">6.00M</p>
+                                    </div>
+                                </div>
+                                <div class="boat-more">From 350€/day<br>- click for more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="boat-card d-block" href="boat.html">
+                            <div class="boat-image position-relative mb-2">
+                                <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                                <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                            </div>
+                            <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                                <div class="boat-items d-flex flex-column">
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                        <p class="mb-0">6 + 1 crew</p>
+                                    </div>
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                        <p class="mb-0">6.00M</p>
+                                    </div>
+                                </div>
+                                <div class="boat-more">From 350€/day<br>- click for more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="boat-card d-block" href="boat.html">
+                            <div class="boat-image position-relative mb-2">
+                                <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                                <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                            </div>
+                            <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                                <div class="boat-items d-flex flex-column">
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                        <p class="mb-0">6 + 1 crew</p>
+                                    </div>
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                        <p class="mb-0">6.00M</p>
+                                    </div>
+                                </div>
+                                <div class="boat-more">From 350€/day<br>- click for more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="boat-card d-block" href="boat.html">
+                            <div class="boat-image position-relative mb-2">
+                                <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                                <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                            </div>
+                            <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                                <div class="boat-items d-flex flex-column">
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                        <p class="mb-0">6 + 1 crew</p>
+                                    </div>
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                        <p class="mb-0">6.00M</p>
+                                    </div>
+                                </div>
+                                <div class="boat-more">From 350€/day<br>- click for more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="boat-card d-block" href="boat.html">
+                            <div class="boat-image position-relative mb-2">
+                                <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                                <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                            </div>
+                            <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                                <div class="boat-items d-flex flex-column">
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                        <p class="mb-0">6 + 1 crew</p>
+                                    </div>
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                        <p class="mb-0">6.00M</p>
+                                    </div>
+                                </div>
+                                <div class="boat-more">From 350€/day<br>- click for more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a class="boat-card d-block" href="boat.html">
+                            <div class="boat-image position-relative mb-2">
+                                <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                                <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                            </div>
+                            <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                                <div class="boat-items d-flex flex-column">
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                        <p class="mb-0">6 + 1 crew</p>
+                                    </div>
+                                    <div class="boat-item d-flex align-items-center">
+                                        <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                        <p class="mb-0">6.00M</p>
+                                    </div>
+                                </div>
+                                <div class="boat-more">From 350€/day<br>- click for more</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="see-more-card d-flex flex-column">
+                            <div class="d-flex flex-column align-items-center justify-content-center text-center">
+                                <h3>+ See more</h3>
+                                <p>Including yachts, powerboats and catamarans.</p>
+                            </div>
+                            <a class="btn thm-btn-dark2 mx-auto" href="boats.html">CHECK OUT MORE MODELS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-primary-separator"></div>
+
+        <!-- Onboard Features Section -->
+        <section class="onboard-features-section py-3 py-md-5">
+            <div class="container thm-container">
+                <h3 class="text-white text-center fw-bold py-3 py-md-4 mb-2 mb-md-4 position-relative">What's on board?</h3>
+                <div class="row justify-content-around align-items-center flex-column flex-md-row thm-color-primary">
+                    <div class="onboard-feature-card position-relative px-md-4 pt-5 pb-3 pb-md-4 mt-5 mb-4 d-flex flex-column align-items-start justify-content-center">
+                        <div class="onboard-feature">
+                            <img src="assets/images/ic_goggles.png" alt="Goggles icon" width="45" height="45">
+                            <p>Snorkeling Equipment</p>
+                        </div>
+                        <div class="onboard-feature">
+                            <img src="assets/images/ic_towels.png" alt="Towels icon" width="45" height="45">
+                            <p>Beach towels
+                            </p>
+                        </div>
+                        <div class="onboard-feature">
+                            <img src="assets/images/ic_drink.png" alt="Drink icon" width="45" height="45">
+                            <p>Drinks - refreshments</p>
+                        </div>
+                        <div class="onboard-feature-title position-absolute start-0 end-0 py-2">
+                            <h5>Included</h5>
+                        </div>
+                    </div>
+                    <div class="onboard-feature-card position-relative px-md-4 pt-5 pb-3 pb-md-4 mt-5 mb-4 d-flex flex-column align-items-start justify-content-center">
+                        <div class="onboard-feature">
+                            <img src="assets/images/ic_lunch_boxes.png" alt="Lunch boxes icon" width="45" height="45">
+                            <p>Lunch boxes pre-order</p>
+                        </div>
+                        <div class="onboard-feature">
+                            <img src="assets/images/ic_restaurant.png" alt="Restaurant icon" width="45" height="45">
+                            <p>Restaurant booking service</p>
+                        </div>
+                        <div class="onboard-feature">
+                            <img src="assets/images/ic_water_toy_rental.png" alt="Water toy rental icon" width="45" height="45">
+                            <p>Water toy rental</p>
+                        </div>
+                        <div class="onboard-feature-title position-absolute start-0 end-0 py-2">
+                            <h5>Optional</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Us Section -->
+        <section id="why_us_section" class="why-us-section position-relative">
+            <div class="container thm-container">
+                <div class="row py-4 py-md-5">
+                    <div class="col d-flex flex-column align-items-center">
+                        <div class="col-md-1 why-us-separator my-3 my-md-4 pt-2"></div>
+                        <h3 class="fw-bold pt-2 pb-4 pb-md-0">Why Just Enjoy Ibiza?</h3>
+                    </div>
+                </div>
+                <div class="row text-white justify-content-between flex-column flex-md-row mt-md-5">
+                    <div class="why-us-item d-flex flex-column pb-4">
+                        <div class="why-us-image-border">
+                            <img src="assets/images/just_home1.jpg" alt="Why us image" width="320" height="170">
+                        </div>
+                        <h4 class="mt-2 mt-md-3">Your wishes are key</h4>
+                        <p>Our team is not your typical charter company. We’re here for you. That’s why we offer <strong>personalised tours</strong>, tailor-made to the needs of each customer.</p>
+                    </div>
+                    <div class="why-us-item d-flex flex-column pb-4">
+                        <div class="why-us-image-border">
+                            <img src="assets/images/just_home2.webp" alt="Why us image" width="320" height="170">
+                        </div>
+                        <h4 class="mt-2 mt-md-3">Tailored to you</h4>
+                        <p>Whether you want to <strong>relax</strong> on a boat, <strong>party</strong>, do <strong>water sports</strong> or snorkel, we can help you make it happen in style. The ultimate goal is to help you create unforgettable memories.</p>
+                    </div>
+                    <div class="why-us-item d-flex flex-column pb-4">
+                        <div class="why-us-image-border">
+                            <img src="assets/images/just_home3.jpg" alt="Why us image" width="320" height="170">
+                        </div>
+                        <h4 class="mt-2 mt-md-3">We want you to enjoy</h4>
+                        <p>Taking you to hidden corners and beaches that feel private, <strong>booking a table</strong> at your preferred restaurant on Formentera, or <strong>rent water toys</strong>. You tell what you'd like and we'll sort it out.</p>
+                    </div>
+                </div>
+                <div class="row text-center pb-4 pb-md-5 pt-3 pt-md-4 pt-md-2">
+                    <div class="col">
+                        <a href="#" class="check-availability btn thm-btn-light mx-auto">CHECK OUT AVAILABILITY</a>
+                        <a href="#" class="plan-my-trip btn thm-btn-dark d-block d-md-none mx-auto">PLAN MY TRIP</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section id="faqs_section" class="faqs-section py-5">
+            <div class="container thm-container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center text-md-start py-4 mb-3">FAQs</h2>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center pt-2">
+                    <div class="faqs-quest-col mb-4 mb-md-2">
+                        <ul class="faq-quests">
+                            <li>
+                                <div class="faq-quest">
+                                    <p>WHAT IS INCLUDED IN THE CHARTER PRICE?</p>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="mb-0">
+                                        Depending on the boat, the offer may change. Welcome drinks, towels and snorkelling equipment are included on all boats.<br><br>
+                                        To view the specific offer for each boat, please click directly on the pictures on the website. Additionally, PDF files can be sent by email or WhatsApp on your request.<br><br>
+                                        <strong>IMPORTANT:</strong><br>
+                                        The fuel, the captain's fee and the 21% VAT are <strong>not</strong> included.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-quest">
+                                    <p>HOW DO I BOOK?</p>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="mb-0">
+                                        You can choose your boat directly from our homepage or get in touch for additional models that are not displayed on the website.<br><br>
+                                        For bookings and non binding consultations you can reach out by phone/WhatsApp (+34 642 453 952) or by filling out the form on the website.<br><br>
+                                        In order to find the perfect boat for your needs, please provide us with the dates, the budget and the number of passengers.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-quest">
+                                    <p>HOW DOES THE PAYMENT WORK?</p>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="mb-0">
+                                        The payment is split in two amounts. The deposit and reservation payment, 50% of the price, is to be paid by bank transfer. In order to be able to reserve the boat, this payment needs to be transferred immediately after the trip confirmation.<br><br>
+                                        The remaining 50% of the amount, as well as the fuel and any extras is to be payed on the charter day by credit card or cash.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-quest">
+                                    <p>HOW MUCH IS THE DEPOSIT?</p>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="mb-0">
+                                        In order to reserve the boat, we need a deposit payment of 50% of the charter price, which is to be paid immediately after the trip confirmation by bank transfer.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-quest">
+                                    <p>IS FUEL INCLUDED IN THE BOAT PRICE?</p>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="mb-0">
+                                        No.<br><br>
+                                        Due to the daily fluctuation of fuel prices and specific motor hours, the total sum can only be calculated at the end of the trip. Therefore fuel expenses are paid at the check-out.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-quest">
+                                    <p>WHAT HAPPENS IN CASE OF BAD WEATHER ON THE CHARTER DAY?</p>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="mb-0">
+                                        Whenever possible, we'll reschedule your charter day. In case that's not feasible, we will of course, issue a full refund of your deposit payment.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-quest">
+                                    <p>WHAT IS THE DURATION OF A CHARTER DAY?</p>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="mb-0">
+                                        A normal charter day takes about 8 hours.<br><br>
+                                        We recommend boarding between 10AM and 12PM to make the most out of your charter day! You will be back in the port around 7PM, or latest at 8PM.<br><br>
+                                        If you wish to end the trip earlier, that is absolutely always possible.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-quest">
+                                    <p>WHAT IS THE CANCELLATION POLICY?</p>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="mb-0">
+                                        There are <strong>no</strong> refunds for <strong>short-term</strong> cancellations, as the boat can't be booked by anyone else when reserved.<br><br>
+                                        For early changes please contact our charter department directly!
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="faq-quest">
+                                    <p>CAN I BRING MY OWN FOOD AND DRINKS ONTO THE BOAT?</p>
+                                </div>
+                                <div class="faq-answer">
+                                    <p class="mb-0">
+                                        Absolutely! You're free to bring your own food and drinks on board.<br><br>
+                                        On request, you can also pre-order lunch boxes with us, or we can book a reservation in a restaurant on your behalf.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-1 faqs-separator mt-2 mt-md-0"></div>
+                    <div class="col-md-4 more-questions-col text-center text-md-start px-md-5">
+                        <h3 class="thm-color-secondary pb-4">More questions?</h3>
+                        <a class="btn thm-btn-light2 mx-auto mx-md-0" href="https://api.whatsapp.com/send?phone=+34602690281&text=Hey%20Alin,%20I'm%20interested%20to%20rent%20a%20boat,%20on%20the%20following%20date:%20" target="_blank">WhatsApp Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Restaurants Section -->
+        <section class="restaurants-section">
+            <div class="container thm-container position-relative">
+                <div class="row">
+                    <div class="col text-center">
+                        <h6 class="text-white py-2 py-md-0">RESTAURANTS WE CAN BOOK FOR YOU</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 logos-list d-flex justify-content-around align-items-center flex-column flex-md-row">
+                        <img src="assets/images/restaurant-logo-white.svg" alt="Logo ChezzGerdi" width="121" height="51">
+                        <img src="assets/images/tiburon-logo-white.svg" alt="Logo Tiburon" width="125" height="57">
+                        <img src="assets/images/juan-logo-white.svg" alt="Logo Juan y Andrea" width="163" height="32">
+                        <img src="assets/images/es-moli-logo-white.svg" alt="Logo Es Molí De Sal" width="105" height="65">
+                        <img src="assets/images/can-carlitos-logo-white.svg" alt="Logo Can Carlitos" width="122" height="46">
+                    </div>
+                </div>
+
+                <!-- Arrow up -->
+                <div class="arrow-up position-absolute d-flex align-items-center justify-content-center">
+                    <a href="#"><img src="assets/images/arrow-up-blue.svg" alt="Arrow up" width="45px" height="45px"></a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center align-items-center flex-md-row flex-column">
+                        <div class="d-flex justify-content-center align-items-center flex-row pb-2 pb-md-0 pt-1 pt-md-0">
+                            <a class="p-1" href="#">Terms & Conditions</a>
+                            <span class="separator mx-4 d-none d-md-block"></span>
+                            <span class="mx-3 d-block d-md-none"></span>
+                            <a class="p-1" href="#">Privacy Policy</a>
+                        </div>
+                        <span class="separator mx-4 d-none d-md-block"></span>
+                        <p class="mb-0 p-0 p-md-1">Just Enjoy Ibiza ©copyright 2022. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating Whatsapp button -->
+        <a class="floating-button" href="https://api.whatsapp.com/send?phone=+34602690281&text=Hey%20Alin,%20I'm%20interested%20to%20rent%20a%20boat,%20on%20the%20following%20date:%20">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="white" d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"/></svg>
+        </a>
+        
+        <!-- Application JavaScript -->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

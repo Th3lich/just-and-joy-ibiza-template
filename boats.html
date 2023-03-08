@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO Meta Tags -->
+    <title>Just Enjoy Ibiza - Boats</title>
+    <meta property="og:title"
+        content="Just Enjoy Ibiza - Just Enjoy Ibiza Boat and Charter Rental With a Personal Touch">
+
+    <!-- External Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- App Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg thm-navbar fixed-top bg-white">
+        <div class="container thm-container position-relative">
+            <div class="hamburger position-absolute">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <a href="/">
+                <img class="logo d-inline-block" src="assets/images/justenjoy-logo.svg" alt="Logo" width="124">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#boats_section">Boats</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#faqs_section">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex">
+                <a href="#" class="btn thm-btn-dark ms-0 ms-md-4"><span>BOOK MY CHARTER</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search sidebar -->
+    <div class="search-sidebar offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+            <button type="button" class="btn-close d-block" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-4 px-sm-4 mx-sm-3">
+            <form class="pb-4">
+                <div class="mb-3">
+                    <label for="search-input" class="mb-1">Search</label>
+                    <input type="text" class="form-control" id="search-input" placeholder="Search...">
+                </div>
+                <div class="mb-3">
+                    <label for="capacity-select" class="mb-1">Capacity</label>
+                    <select class="form-select" id="capacity-select">
+                        <option selected>All</option>
+                        <option>1-4 guests</option>
+                        <option>5-8 guests</option>
+                        <option>9-12 guests</option>
+                        <option>13+ guests</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="cabins-select" class="mb-1">Cabins</label>
+                    <select class="form-select" id="cabins-select">
+                        <option selected>All</option>
+                        <option>1 cabin</option>
+                        <option>2 cabins</option>
+                        <option>3 cabins</option>
+                        <option>4+ cabins</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="length-select" class="mb-1">Length</label>
+                    <select class="form-select" id="length-select">
+                        <option selected>All</option>
+                        <option>Less than 30ft</option>
+                        <option>30-40ft</option>
+                        <option>40-50ft</option>
+                        <option>50-60ft</option>
+                        <option>60-70ft</option>
+                        <option>More than 70ft</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-check-label">Available without skipper?</label><br>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Both</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Without skipper</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option3">
+                        <label class="form-check-label" for="inlineRadio3">With skipper</label>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="minimum-price-range">Minimum price (910.00€)</label>
+                    <input type="range" class="form-range thm-range-slider" min="910" max="9199" step="100" id="minimum-price-range">
+                </div>
+                <div class="mb-3">
+                    <label for="maximum-price-range" class="mb-1">Maximum price (9199.00€)</label>
+                    <input type="range" class="form-range thm-range-slider" min="910" max="9199" value="9199" step="100"
+                        id="maximum-price-range">
+                </div>
+                <div class="d-flex justify-content-center pt-2">
+                    <button type="submit" class="btn thm-btn-dark3">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- All Boats section -->
+    <section class="all-boats-section">
+        <div class="container thm-container position-relative pt-3 pt-sm-2 pt-xl-0">
+            <div class="row">
+                <div class="col py-4">
+                    <button class="btn thm-btn-dark3 btn-filter button d-block">
+                        <svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="20px" width="20px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" fill="#fff"><path d="M19 9c1.7 0 3-1.3 3-3s-1.3-3-3-3c-1.3 0-2.4.8-2.8 2H2v2h14.2c.4 1.2 1.5 2 2.8 2zm0-4c.6 0 1 .4 1 1s-.4 1-1 1-1-.4-1-1 .4-1 1-1zM9 9c-1.3 0-2.4.8-2.8 2H2v2h4.2c.4 1.2 1.5 2 2.8 2s2.4-.8 2.8-2H22v-2H11.8c-.4-1.2-1.5-2-2.8-2zm0 4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zM19 15c-1.3 0-2.4.8-2.8 2H2v2h14.2c.4 1.2 1.5 2 2.8 2 1.7 0 3-1.3 3-3s-1.3-3-3-3zm0 4c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1z"></path></svg>
+                        Filter
+                    </button>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 gx-3 gy-4 pb-5 py-md-5">
+                <div class="col">
+                    <a class="boat-card d-block" href="boat.html">
+                        <div class="boat-image position-relative mb-2">
+                            <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                            <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                        </div>
+                        <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                            <div class="boat-items d-flex flex-column">
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                    <p class="mb-0">6 + 1 crew</p>
+                                </div>
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                    <p class="mb-0">6.00M</p>
+                                </div>
+                            </div>
+                            <div class="boat-more">From 350€/day<br>- click for more</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="boat-card d-block" href="boat.html">
+                        <div class="boat-image position-relative mb-2">
+                            <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                            <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                        </div>
+                        <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                            <div class="boat-items d-flex flex-column">
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                    <p class="mb-0">6 + 1 crew</p>
+                                </div>
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                    <p class="mb-0">6.00M</p>
+                                </div>
+                            </div>
+                            <div class="boat-more">From 350€/day<br>- click for more</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="boat-card d-block" href="boat.html">
+                        <div class="boat-image position-relative mb-2">
+                            <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                            <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                        </div>
+                        <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                            <div class="boat-items d-flex flex-column">
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                    <p class="mb-0">6 + 1 crew</p>
+                                </div>
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                    <p class="mb-0">6.00M</p>
+                                </div>
+                            </div>
+                            <div class="boat-more">From 350€/day<br>- click for more</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="boat-card d-block" href="boat.html">
+                        <div class="boat-image position-relative mb-2">
+                            <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                            <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                        </div>
+                        <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                            <div class="boat-items d-flex flex-column">
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                    <p class="mb-0">6 + 1 crew</p>
+                                </div>
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                    <p class="mb-0">6.00M</p>
+                                </div>
+                            </div>
+                            <div class="boat-more">From 350€/day<br>- click for more</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="boat-card d-block" href="boat.html">
+                        <div class="boat-image position-relative mb-2">
+                            <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                            <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                        </div>
+                        <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                            <div class="boat-items d-flex flex-column">
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                    <p class="mb-0">6 + 1 crew</p>
+                                </div>
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                    <p class="mb-0">6.00M</p>
+                                </div>
+                            </div>
+                            <div class="boat-more">From 350€/day<br>- click for more</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="boat-card d-block" href="boat.html">
+                        <div class="boat-image position-relative mb-2">
+                            <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                            <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                        </div>
+                        <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                            <div class="boat-items d-flex flex-column">
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                    <p class="mb-0">6 + 1 crew</p>
+                                </div>
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                    <p class="mb-0">6.00M</p>
+                                </div>
+                            </div>
+                            <div class="boat-more">From 350€/day<br>- click for more</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="boat-card d-block" href="boat.html">
+                        <div class="boat-image position-relative mb-2">
+                            <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                            <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                        </div>
+                        <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                            <div class="boat-items d-flex flex-column">
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                    <p class="mb-0">6 + 1 crew</p>
+                                </div>
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                    <p class="mb-0">6.00M</p>
+                                </div>
+                            </div>
+                            <div class="boat-more">From 350€/day<br>- click for more</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="boat-card d-block" href="boat.html">
+                        <div class="boat-image position-relative mb-2">
+                            <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                            <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                        </div>
+                        <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                            <div class="boat-items d-flex flex-column">
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                    <p class="mb-0">6 + 1 crew</p>
+                                </div>
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                    <p class="mb-0">6.00M</p>
+                                </div>
+                            </div>
+                            <div class="boat-more">From 350€/day<br>- click for more</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a class="boat-card d-block" href="boat.html">
+                        <div class="boat-image position-relative mb-2">
+                            <img src="assets/images/boat_Quicksilver_605_SA.jpg" alt="Boat image">
+                            <h4 class="text-white position-absolute start-0 end-0 bottom-0 ps-2">Quicksilver 605 SA</h4>
+                        </div>
+                        <div class="boat-content d-flex justify-content-between align-items-center p-1">
+                            <div class="boat-items d-flex flex-column">
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_people.svg" alt="People icon" width="20" height="20">
+                                    <p class="mb-0">6 + 1 crew</p>
+                                </div>
+                                <div class="boat-item d-flex align-items-center">
+                                    <img src="assets/images/ic_lenght.svg" alt="Lenght icon" width="16" height="16">
+                                    <p class="mb-0">6.00M</p>
+                                </div>
+                            </div>
+                            <div class="boat-more">From 350€/day<br>- click for more</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center flex-md-row flex-column">
+                    <div class="d-flex justify-content-center align-items-center flex-row pb-2 pb-md-0 pt-1 pt-md-0">
+                        <a class="p-1" href="#">Terms & Conditions</a>
+                        <span class="separator mx-4 d-none d-md-block"></span>
+                        <span class="mx-3 d-block d-md-none"></span>
+                        <a class="p-1" href="#">Privacy Policy</a>
+                    </div>
+                    <span class="separator mx-4 d-none d-md-block"></span>
+                    <p class="mb-0 p-0 p-md-1">Just Enjoy Ibiza ©copyright 2022. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Whatsapp button -->
+    <a class="floating-button"
+        href="https://api.whatsapp.com/send?phone=+34602690281&text=Hey%20Alin,%20I'm%20interested%20to%20rent%20a%20boat,%20on%20the%20following%20date:%20">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+            <path fill="white"
+                d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z" />
+        </svg>
+    </a>
+
+    <!-- Application JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
