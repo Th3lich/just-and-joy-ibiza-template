@@ -74,6 +74,12 @@ h3 {
     max-width: 1100px;
 }
 
+@media screen and (max-width: 767px) {
+    .thm-container {
+        max-width: 350px;
+    }
+}
+
 /* Colors */
 .thm-color-primary {
     color: var(--color-primary);
@@ -81,6 +87,15 @@ h3 {
 
 .thm-color-secondary {
     color: var(--color-secondary);
+}
+
+/* Fonts */
+.thm-font-primary {
+    font-family: 'Marcellus', serif;
+}
+
+.thm-font-secondary {
+    font-family: 'Montserrat Thin', sans-serif;
 }
 
 /* Backgrounds */
@@ -95,18 +110,13 @@ body > section:first-of-type {
     margin-top: 72px;
 }
 
-@media screen and (max-width: 767px) {
-    .thm-container {
-        max-width: 350px;
-    }
-}
-
 
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
 
 .thm-btn-dark, .thm-btn-dark2, .thm-btn-dark3, .thm-btn-light, .thm-btn-light2 {
+    width: fit-content;
     min-width: calc(195px + 0.4vw);
     padding: 16px 22px;
     border-radius: 10px;
@@ -117,6 +127,10 @@ body > section:first-of-type {
     text-align: center;
     border-style: solid;
     border-width: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem !important;
 }
 
 .thm-btn-dark, .thm-btn-dark2, .thm-btn-dark3 {
@@ -1100,7 +1114,7 @@ footer {
 footer p, footer a, footer span {
     font-size: 0.75rem;
     color: #a9a9a9;
-    z-index: 291;
+    z-index: 98;
 }
 
 footer a {
@@ -1145,7 +1159,7 @@ footer .separator {
 --------------------------------------------------------------*/
 
 .search-sidebar {
-    padding-top: 72px;
+    padding-top: 24px;
     z-index: 901;
 }
 
@@ -1156,7 +1170,7 @@ footer .separator {
     box-shadow: 0px 0px 0px 2px var(--color-secondary);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1600px) {
     .search-sidebar {
         padding-top: 0;
         margin-top: 72px;
@@ -1165,11 +1179,19 @@ footer .separator {
         visibility: visible !important;
         transform: none !important;
     }
+
+    .search-sidebar .btn-close {
+        display: none !important;
+    }
+
+    .btn-filter {
+        display: none !important;
+    }
 }
 
 
 /*--------------------------------------------------------------
-# Boat Banner Section
+# Boat Banner section
 --------------------------------------------------------------*/
 
 .boat-banner-section {
@@ -1244,7 +1266,7 @@ footer .separator {
 
 
 /*--------------------------------------------------------------
-# Boat Prices Section
+# Boat Prices section
 --------------------------------------------------------------*/
 
 .boat-prices-section {
@@ -1279,7 +1301,7 @@ footer .separator {
 
 
 /*--------------------------------------------------------------
-# Boat Gallery Section
+# Boat Gallery section
 --------------------------------------------------------------*/
 
 .boat-gallery-section .gallery-image {
@@ -1310,4 +1332,30 @@ footer .separator {
         flex: inherit !important;
         margin: 4px;
     }
+}
+
+
+/*--------------------------------------------------------------
+# Boat Description section
+--------------------------------------------------------------*/
+
+.boat-description-section h4 {
+    font-size: calc(1.7rem + 0.3vw);
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.boat-description-section .boat-description-separator {
+    margin: 0 calc(18px + 0.5vw) 1.1rem;
+    width: calc(100% - calc(44px + 1vw));
+    height: calc(7px + 0.08vw);
+    background-color: var(--color-secondary);
+}
+
+.boat-description-section p {
+    color: var(--color-primary);
+}
+
+.boat-description-section .boat-vat p {
+    color: inherit;
 }
